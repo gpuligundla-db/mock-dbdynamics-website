@@ -1,5 +1,5 @@
-<title>DeerBrook Future</title>
-<!-- END-TO-END MOCK v2.1 · Direction: Redline (design system — Source Serif 4 / Manrope / IBM Plex Sans Condensed, warm paper, signature red) ·
+<title>DeerBrook Future — Redline direction (realfast.ai design system)</title>
+<!-- END-TO-END MOCK v2.1 · Direction: Redline (design system pulled from realfast.ai — Source Serif 4 / Manrope / IBM Plex Sans Condensed, warm paper, signature red) · Built against 2026-08-11-deerbrook-future-site-plan.md (Decisions 1-8 + P1-P8).
      Stats, case figures, testimonials, team names, and GP EOL dates are placeholders to verify/replace. No pricing displayed by decision. -->
 <style>
 @font-face {
@@ -81,7 +81,7 @@
   .bridge .lead{color:#f5f3ef;font-weight:600}
   .bridge .sep{opacity:.4}
 
-  nav{position:sticky;top:0;z-index:20;background:transparent;padding:10px 0 4px}
+  nav{position:sticky;top:0;z-index:20;background:transparent;padding:10px 0 10px}
   .navrow{display:flex;align-items:center;gap:26px;padding:9px 20px;background:#fff;
     border-radius:16px;box-shadow:0 6px 24px rgba(17,17,17,.09)}
   .lockup{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -128,7 +128,7 @@
     margin:16px 0 20px;font-weight:600;letter-spacing:-.024em;text-wrap:balance;max-width:22ch}
   .herogrid h1{font-size:clamp(32px,4vw,48px);max-width:24ch}
   .dek{font-family:"Source Serif 4",Georgia,serif;font-size:19px;color:#3c3a36;max-width:52ch;
-    margin:0 0 28px;text-wrap:pretty;line-height:1.55}
+    margin:0 0 28px;text-wrap:balance;line-height:1.55}
   .hero-cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
   .hero-cta .aside{font-size:13px;color:var(--ink-2)}
   .pagehero{padding:68px 0 52px;border-bottom:1px solid var(--line);
@@ -165,7 +165,7 @@
   @keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
   @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
   @media (prefers-reduced-motion: reduce){
-    .combo,.bub.q,.bub.a,.feed .fh,.feed .fi{animation:none;opacity:1}
+    .combo,.bub.q,.bub.a,.feed .fh,.feed .fi,.itile,.fde,.fde .lane,.fde .cap{animation:none;opacity:1}
     .combo .ch .live::before{animation:none}
     .ladarrow svg{animation:none}
   }
@@ -177,14 +177,13 @@
   .proofrow>div+div::before{content:"";position:absolute;left:-23px;top:24px;bottom:24px;
     width:1px;background:var(--line)}
   .proofrow b{display:block;color:var(--ink);font-size:15px;font-weight:800;line-height:1.3;
-    margin-bottom:5px;min-height:2.6em;text-wrap:balance}
+    margin-bottom:5px;text-wrap:balance}
   .proofrow .pl{display:block;text-wrap:balance}
   .proofrow .ai-liner{display:flex;margin:7px 0 0}
   .proofrow .ai-liner svg{width:14px;height:14px}
   @media(max-width:1040px){
     .proofrow{grid-template-columns:repeat(2,1fr);column-gap:34px}
     .proofrow>div+div::before{display:none}
-    .proofrow b{min-height:0}
   }
   @media(max-width:560px){.proofrow{grid-template-columns:1fr}}
 
@@ -228,7 +227,7 @@
   .lad p{font-size:13.5px;color:var(--ink-2);margin:0 0 12px}
   .lad a{display:block;font-size:13px;font-weight:700;color:var(--ink);text-decoration:none;margin-top:6px}
   .lad a:hover{color:var(--pine)}
-  .lad a::after{content:" →";color:var(--pine)}
+  .lad a::after{content:"\00a0→";color:var(--pine)}
   .ladarrow{display:flex;align-items:center;padding:0 6px;color:var(--pine);flex:0 0 auto}
   .ladarrow svg{width:26px;height:16px;overflow:visible}
   .ladarrow .dash{stroke:var(--pine);stroke-width:2;stroke-dasharray:4 4;fill:none;animation:dashmove 1.6s linear infinite}
@@ -288,11 +287,6 @@
   .badgebox b{display:block;font-size:14px;color:var(--ink);margin-bottom:2px}
 
   .assessgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
-  .slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0 8px}
-  .slot{border:1px solid var(--line);background:#fff;border-radius:8px;padding:10px 8px;
-    text-align:center;font-size:13.5px;cursor:pointer;font-family:inherit;color:var(--ink)}
-  .slot:hover{border-color:var(--ink)}
-  .slot.on{background:var(--pine);color:#fff;border-color:var(--pine)}
   .slotnote{font-size:12.5px;color:var(--ink-2)}
   form{display:grid;gap:12px}
   label{font-size:13px;font-weight:700}
@@ -331,7 +325,7 @@
     font-size:19px;line-height:1;text-align:center;transform:translateY(2px)}
   details[open].faq summary::before{content:"–"}
   details.faq .a{padding:0 18px 16px 46px;color:var(--ink-2);font-size:14px;line-height:1.65;max-width:70ch}
-  .ctaband{background:var(--pine-deep);color:#f5f3ef;border-radius:18px;padding:40px 38px;
+  .ctaband{background:var(--pine-deep);color:#f5f3ef;border-radius:18px;padding:34px 36px;
     display:flex;gap:24px;align-items:center;flex-wrap:wrap}
   .ctaband h2{color:#fff;margin:0;font-size:clamp(22px,3vw,30px)}
   .ctaband p{margin:4px 0 0;color:#b8b2a8;font-size:14.5px}
@@ -391,10 +385,10 @@
   .chatpanel .chh small{display:block;font-weight:400;font-size:12px;color:#b8b2a8}
   .chatpanel .chb{padding:14px 16px}
   .chatpanel .greet{font-size:13.5px;color:var(--ink-2);margin:0 0 12px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
-  .chip{border:1px solid var(--pine);color:var(--pine);border-radius:16px;background:none;cursor:pointer;
-    font-family:inherit;font-size:12.5px;font-weight:700;padding:6px 12px}
-  .chip:hover{background:var(--pine);color:#fff}
+  .chatpanel .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .chatpanel .chip{border:1px solid var(--pine);color:var(--pine);border-radius:16px;background:#fff;
+    cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:700;padding:6px 12px}
+  .chatpanel .chip:hover{background:var(--pine);color:#fff}
   .chatin{display:flex;gap:8px}
   .chatin input{font-size:13.5px;padding:9px 11px}
   .chatin button{flex:0 0 auto;padding:9px 14px}
@@ -418,12 +412,15 @@
 
   @media (max-width:900px){
     .herogrid{grid-template-columns:1fr}
+    .behavgrid,.slayer,.clause,.officegrid{grid-template-columns:1fr;gap:20px}
+    .fde{justify-self:start}
     .combo{justify-self:start}
     .ladder{flex-direction:column}
     .ladarrow{transform:rotate(90deg);justify-content:center;padding:2px 0}
   }
   @media (max-width:760px){
     .navlinks{display:none}
+    .indgrid{display:none}
     .assessgrid{grid-template-columns:1fr}
     .bank,.bank:nth-child(even){flex-direction:column;align-items:flex-start;text-align:left;gap:8px}
     .quote{flex-wrap:wrap}
@@ -433,10 +430,11 @@
     .chatpanel{width:calc(100vw - 44px)}
   }
 
-  /* home band alternation */
+  /* home band alternation (realfast rhythm) */
   main section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:80px 0}
   main[data-page="home"] section{padding:80px 0}
-  main section:has(.ctaband){padding-bottom:28px}
+  main section.ctasec{padding:34px 0 72px;background:#fff;border-top:1px solid var(--line)}
+  main section.alt+section.ctasec{border-top:0}
   main[data-page="home"] section.dark{padding:72px 0}
 
   /* credibility bar icons */
@@ -444,6 +442,140 @@
   .pico{flex:0 0 auto;width:34px;height:34px;border-radius:9px;background:var(--paper);
     border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--pine);margin-top:3px}
   .pico svg{width:17px;height:17px}
+  .pillar .pico{margin:0 0 14px}
+  .indgrid{display:grid;grid-template-columns:repeat(3,66px);gap:14px;justify-self:end}
+  .itile{width:66px;height:66px;border-radius:15px;background:#fff;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--pine);
+    box-shadow:0 8px 22px rgba(17,17,17,.05);opacity:0;animation:rise .5s ease forwards}
+  .itile svg{width:27px;height:27px}
+  .itile.on{background:var(--pine);border-color:var(--pine);color:#fff;
+    box-shadow:0 10px 26px rgba(227,18,11,.22)}
+  .itile:nth-child(1){animation-delay:.12s}
+  .itile:nth-child(2){animation-delay:.2s}
+  .itile:nth-child(3){animation-delay:.28s}
+  .itile:nth-child(4){animation-delay:.36s}
+  .itile:nth-child(5){animation-delay:.44s}
+  .itile:nth-child(6){animation-delay:.52s}
+
+  /* about — the forward-deployed-engineer thesis card */
+  .fde{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;width:100%;
+    max-width:460px;justify-self:end;box-shadow:0 24px 60px rgba(17,17,17,.10);
+    opacity:0;animation:cardin .7s cubic-bezier(.22,.8,.3,1) .15s forwards}
+  .fde .ch{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-2);font-weight:600;margin-bottom:15px}
+  .fde .lane{opacity:0;animation:rise .5s ease forwards}
+  .fde .lane:nth-of-type(2){animation-delay:.6s}
+  .fde .lane:nth-of-type(3){animation-delay:1.05s;margin-top:16px}
+  .fde .lane.us{background:#fdf6f4;border:1px solid #f4dfda;border-radius:12px;
+    padding:12px 12px 8px;margin:20px -4px 0}
+  .fde .lane.us .scene .room{fill:#fff}
+  .fde .lt{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:11px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-2);margin-bottom:8px}
+  .fde .scene{display:block;width:100%;height:auto}
+  .fde .scene circle,.fde .scene path{fill:none;stroke:var(--ink);stroke-width:1.8;
+    stroke-linecap:round;stroke-linejoin:round}
+  .fde .scene .room{fill:var(--paper);stroke:var(--line);stroke-width:1}
+  .fde .scene .flow{stroke:#6e6e6e;stroke-width:1.5}
+  .fde .scene .flow.dash{stroke-dasharray:4 3}
+  .fde .scene .wall{stroke:#b0aba0;stroke-width:1.6;stroke-dasharray:5 4}
+  .fde .scene .dim{stroke:#c2bdb2}
+  .fde .scene .dim2{stroke:#ddd8cd}
+  .fde .scene marker.faint path{fill:#ddd8cd}
+  .fde .scene .hi{stroke:var(--pine)}
+  .fde .scene .halo{fill:#fbeae7;stroke:none}
+  .fde .scene text{fill:#6e6e6e;stroke:none;font-family:"IBM Plex Sans Condensed",sans-serif;
+    font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;text-anchor:middle}
+  .fde .scene text.dim{fill:#b0aba0}
+  .fde .scene text.dim2{fill:#c9c3b6}
+  .fde .scene text.hi{fill:var(--pine)}
+  .fde .scene marker path{fill:#6e6e6e;stroke:none}
+  .fde .cap{margin:16px 0 0;padding-top:12px;border-top:1px dashed var(--line);
+    font-size:12.5px;color:var(--ink-2);line-height:1.5;opacity:0;animation:rise .5s ease 1.45s forwards}
+
+  /* about — three behaviors */
+  .behavgrid{display:grid;grid-template-columns:.4fr 1fr;gap:48px;align-items:start}
+  .bnote{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:13.5px;color:var(--ink-2);
+    line-height:1.65;max-width:26ch;margin:14px 0 0}
+  .behav+.behav{margin-top:42px}
+  .behav h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;letter-spacing:-.022em;
+    font-size:clamp(30px,4.2vw,48px);line-height:1.02;margin:0 0 16px;display:flex;
+    align-items:baseline;gap:18px;text-wrap:balance}
+  .behav h3 .bt{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:12px;letter-spacing:.14em;
+    color:var(--pine);font-weight:600;flex:0 0 auto;transform:translateY(-2px)}
+  .behav h3 em{font-style:italic;color:var(--pine)}
+  .behav p{margin:0;font-size:16px;line-height:1.62;color:var(--ink-2);max-width:56ch;
+    padding-left:38px;border-left:1px solid var(--line);text-wrap:balance}
+
+  /* about — the stack, three layers */
+  .stack{margin-top:28px;border:1px solid rgba(255,255,255,.14);border-radius:16px;
+    background:rgba(255,255,255,.02);overflow:hidden}
+  .slayer{display:grid;grid-template-columns:.44fr 1fr;gap:30px;padding:24px 26px}
+  .slayer+.slayer{border-top:1px solid rgba(255,255,255,.14)}
+  .slayer .sk{display:block;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:6px}
+  .slayer b{display:block;font-size:17px;color:#fff;margin-bottom:6px}
+  .slayer .sd{display:block;font-size:13px;color:#b8b2a8;line-height:1.55}
+  .stack .chips{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+  .stack .chip{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.16);
+    border-radius:9px;padding:9px 13px;font-size:13px;color:#f5f3ef;background:rgba(255,255,255,.04)}
+  .stack .chip svg{width:18px;height:18px;flex:0 0 auto}
+  .stack .chip .bet{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--amber)}
+
+  /* ai — the two-week cycle */
+  .podring{margin:30px 0 4px}
+  .podring .ring{display:block;width:100%;max-width:840px;height:auto;margin:0 auto}
+  .podring .arc{fill:none;stroke:rgba(255,255,255,.26);stroke-width:1.4;stroke-dasharray:5 5}
+  .podring marker path{fill:rgba(255,255,255,.42);stroke:none}
+  .podring .node{fill:rgba(255,255,255,.05);stroke:rgba(255,255,255,.22);stroke-width:1}
+  .podring .gl{fill:none;stroke:#f5f3ef;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .podring .st{fill:#fff;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:13px;
+    font-weight:600;letter-spacing:.07em;text-transform:uppercase}
+  .podring .sl{fill:#b8b2a8;font-family:"Manrope",sans-serif;font-size:11.5px}
+  .podring .ct{fill:var(--amber);font-family:"IBM Plex Sans Condensed",sans-serif;font-size:13px;
+    font-weight:600;letter-spacing:.16em}
+  .podring .cl{fill:#b8b2a8;font-family:"Source Serif 4",Georgia,serif;font-size:14px;font-style:italic}
+  .podsteps{display:none}
+  @media(max-width:860px){
+    .podring{display:none}
+    .podsteps{display:grid;gap:15px;margin:24px 0 4px;padding:0;list-style:none;counter-reset:pod}
+    .podsteps li{display:grid;grid-template-columns:30px 1fr;gap:14px;align-items:start}
+    .podsteps li::before{counter-increment:pod;content:counter(pod);width:28px;height:28px;
+      font-family:"IBM Plex Sans Condensed",sans-serif;font-size:12px;font-weight:600;color:var(--amber);
+      border:1px solid rgba(255,255,255,.22);border-radius:50%;display:flex;align-items:center;
+      justify-content:center}
+    .podsteps b{display:block;color:#fff;font-size:15px}
+    .podsteps span{display:block;color:#b8b2a8;font-size:13.5px;line-height:1.5}
+  }
+
+  /* about — promises as contract clauses */
+  .clauses{margin-top:14px;border-top:1px solid var(--line)}
+  .clause{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:26px 0;
+    border-bottom:1px solid var(--line)}
+  .clause .cnum{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--pine);font-weight:600;padding-top:6px}
+  .clause h3{margin:0 0 7px;font-size:21px}
+  .clause p{margin:0;font-size:15px;line-height:1.62;color:var(--ink-2);max-width:70ch}
+
+  /* about — offices */
+  .office{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;
+    display:flex;gap:18px;align-items:flex-start}
+  .mapcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;
+    display:flex;align-items:center;justify-content:center}
+  .usmap{display:block;width:100%;height:auto}
+  .usmap .land{fill:var(--paper);stroke:#ddd7cc;stroke-width:2;stroke-linejoin:round}
+  .usmap .halo{fill:var(--pine);opacity:.18}
+  .usmap .dot{fill:var(--pine);stroke:#fff;stroke-width:2.5}
+  .officegrid{display:grid;grid-template-columns:.92fr 1fr;gap:20px;align-items:stretch;margin-top:26px}
+  .officecol{display:grid;gap:14px}
+  .office b{display:block;font-size:16px;margin-bottom:6px}
+  .office>div span{display:block;font-size:13.5px;color:var(--ink-2);line-height:1.6}
+  .office>.pico{margin:1px 0 0}
+  .office.call a.tel{display:inline-block;font-family:"Source Serif 4",Georgia,serif;font-size:26px;
+    line-height:1.1;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--pine);
+    padding-bottom:2px;margin:0 0 10px}
+  .office.call a.tel:hover{color:var(--pine)}
+  main[data-page="industries"] .pillars.six{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
   .ai-liner{display:inline-flex;gap:7px;margin-left:7px;vertical-align:-1px}
   .ai-liner svg{width:13px;height:13px}
   .ai-liner svg:nth-child(1){color:#0078D4}
@@ -455,9 +587,9 @@
   main section.featured{background:#fff radial-gradient(62% 100% at 88% 0%,#fae3df 0%,rgba(250,227,223,0) 55%)}
 
   /* hover layer: one system, navigable cards only */
-  .lad,.pillar,.stat,.post,.person,.door{transition:transform .25s cubic-bezier(.22,.8,.3,1),
+  .lad,.pillar,.stat,.post,.person,.door,.office{transition:transform .25s cubic-bezier(.22,.8,.3,1),
     box-shadow .25s ease,border-color .25s ease}
-  .lad:hover,.pillar:hover,.stat:hover,.post:hover,.person:hover,.door:hover{transform:translateY(-3px);
+  .lad:hover,.pillar:hover,.stat:hover,.post:hover,.person:hover,.door:hover,.office:hover{transform:translateY(-3px);
     box-shadow:0 14px 34px rgba(17,17,17,.08);border-color:#d3cdc0}
 
   .mslogo{display:grid;grid-template-columns:8px 8px;gap:1.5px;flex:0 0 auto}
@@ -598,7 +730,7 @@
     <a href="#/about" data-nav="about">About</a>
     <a href="#/insights" data-nav="insights">Insights</a>
   </div>
-  <a class="btn" href="#/contact">Book a free assessment</a>
+  <a class="btn" href="#/contact">Request an assessment</a>
   <button class="menuburger" id="menuburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
 </div></nav>
 
@@ -626,7 +758,7 @@
   <a href="#/about">About</a>
   <a href="#/insights">Insights</a>
   <a href="#/contact">Contact</a>
-  <a class="btn" href="#/contact">Book a free assessment</a>
+  <a class="btn" href="#/contact">Request an assessment</a>
 </div>
 
 <!-- ============================== HOME ============================== -->
@@ -638,7 +770,7 @@
     <p class="dek">Business Central, Dynamics 365, and Power BI for finance and operations teams —
       implemented at AI speed, with AI working inside them from day one.</p>
     <div class="hero-cta">
-      <a class="btn" href="#/contact">Book a free assessment</a>
+      <a class="btn" href="#/contact">Request an assessment</a>
       <a class="btn ghost" href="#/cases">See client results</a>
       <span class="aside">30 minutes · a senior consultant, not a salesperson</span>
     </div>
@@ -664,7 +796,7 @@
     <div><b>AI practice</b><span class="pl">Copilot Studio, Azure AI Foundry &amp; Anthropic models</span>
       <span class="ai-liner" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 23l.073-.001a2.53 2.53 0 01-2.347-1.838l-.697-2.433a2.529 2.529 0 00-2.426-1.839h-.497l-.104-.002c-4.485 0-2.935-5.278-1.75-9.225l.162-.525C2.412 3.99 3.883 1 6.25 1h8.86c1.12 0 2.106.745 2.422 1.829l.715 2.453a2.53 2.53 0 002.247 1.823l.147.005.534.001c3.557.115 3.088 3.745 2.156 7.206l-.113.413c-.154.548-.315 1.089-.47 1.607l-.163.525C21.588 20.01 20.116 23 17.75 23h-8.75zm8.22-15.89l-3.856.001a2.526 2.526 0 00-2.35 1.615L9.21 15.04a2.529 2.529 0 01-2.43 1.847l3.853.002c1.056 0 1.992-.661 2.361-1.644l1.796-6.287a2.529 2.529 0 012.43-1.848z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg></span></div></div>
   <div><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-    <div><b>Seniors &amp; forward-deployed engineers</b><span class="pl">embedded with your team from kickoff to go-live</span></div></div>
+    <div><b>Senior consultants and FDEs</b><span class="pl">embedded with your team from kickoff to go-live</span></div></div>
   <div><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
     <div><b>24-hour reply</b><span class="pl">every message answered within one business day</span></div></div>
 </div></div>
@@ -850,13 +982,13 @@
   </div>
 </div></section>
 
-<section><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div>
-      <h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
-      <p>A senior consultant, not a salesperson. Leave with two or three concrete moves — whether or not you hire us.</p>
+      <h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
+      <p>Write to us and a senior consultant — not a salesperson — replies within one business day.</p>
     </div>
-    <a class="btn" href="#/contact">Pick a time</a>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
@@ -868,7 +1000,7 @@
   <h1 class="serif">Month-end in days, not weeks.</h1>
   <p class="dek">Business Central puts finance and operations in one system — implemented by senior
     hands, at AI speed, for companies of roughly 10 to 250 people.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a free ERP assessment</a>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request an ERP assessment</a>
     <span class="aside">30 minutes · we map your systems and name the first win</span></div>
 </div></header>
 
@@ -1004,11 +1136,11 @@
       which is which; most clients start with what's already included.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
-      <p>A senior consultant, not a salesperson. Leave with two or three concrete moves — whether or not you hire us.</p></div>
-    <a class="btn" href="#/contact">Book a free ERP assessment</a>
+    <div><h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
+      <p>Write to us; a senior consultant replies within one business day, with two or three concrete moves whether or not you hire us.</p></div>
+    <a class="btn" href="#/contact">Request an ERP assessment</a>
   </div>
 </div></section>
 </main>
@@ -1020,7 +1152,7 @@
   <h1 class="serif">When your operations outgrow "small business" software.</h1>
   <p class="dek">Multi-entity, multi-country, deep supply chain and manufacturing — F&amp;O is
     Microsoft's heavyweight ERP. We implement it, rescue it, and make it earn its keep.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a free systems assessment</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request a systems assessment</a></div>
 </div></header>
 
 <section><div class="wrap">
@@ -1108,11 +1240,11 @@
       defend to your board.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
+    <div><h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
       <p>Including an honest BC-or-F&amp;O call, with the reasoning in writing.</p></div>
-    <a class="btn" href="#/contact">Book a free systems assessment</a>
+    <a class="btn" href="#/contact">Request a systems assessment</a>
   </div>
 </div></section>
 </main>
@@ -1124,7 +1256,7 @@
   <h1 class="serif">A CRM your sellers open on purpose.</h1>
   <p class="dek">One view of every customer, from first call to renewal — designed around how your
     team actually sells, which is the only adoption strategy that works.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Get a CRM health check</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request a CRM health check</a></div>
 </div></header>
 
 <section><div class="wrap">
@@ -1195,11 +1327,11 @@
       demo-ware.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">Get a CRM health check</h2>
-      <p>30 minutes with a senior consultant — where your funnel leaks, and the two fixes that pay first.</p></div>
-    <a class="btn" href="#/contact">Get a CRM health check</a>
+      <p>Write to us: 30 minutes with a senior consultant on where your funnel leaks and the two fixes that pay first.</p></div>
+    <a class="btn" href="#/contact">Request a CRM health check</a>
   </div>
 </div></section>
 </main>
@@ -1211,7 +1343,7 @@
   <h1 class="serif">Numbers everyone trusts, in dashboards people actually open.</h1>
   <p class="dek">From "three reports, three answers" to one governed source of truth — Power BI on
     your ERP and CRM, Fabric and warehousing when the data earns it.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a free assessment</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request an assessment</a></div>
 </div></header>
 
 <section class="alt"><div class="wrap">
@@ -1254,11 +1386,11 @@
       we start from proven templates and tune to your chart of accounts.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
+    <div><h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
       <p>Bring your most-argued-about report. We'll tell you why the numbers differ.</p></div>
-    <a class="btn" href="#/contact">Pick a time</a>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
@@ -1270,7 +1402,7 @@
   <h1 class="serif">Budgeting season shouldn't take a season.</h1>
   <p class="dek">Planning models built for you, on the Excel your team already knows — wired to your
     ERP, accelerated by AI, escalated to vendor tools only if you truly outgrow it.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a planning session</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request a planning session</a></div>
 </div></header>
 
 <section><div class="wrap">
@@ -1333,11 +1465,11 @@
       or reforecast on it — with us alongside for that first cycle.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a planning session</h2>
+    <div><h2 class="serif">Request a planning session</h2>
       <p>Bring last year's budget workbook. We'll show you what AI does to it — on the spot.</p></div>
-    <a class="btn" href="#/contact">Book a planning session</a>
+    <a class="btn" href="#/contact">Request a planning session</a>
   </div>
 </div></section>
 </main>
@@ -1346,11 +1478,10 @@
 <main data-page="ai" hidden>
 <header class="pagehero"><div class="wrap">
   <span class="eyebrow">AI &amp; Automation</span>
-  <h1 class="serif">Work that runs itself.</h1>
-  <p class="dek">Custom agents, flows, and document automation on your own systems and data —
-    built tool-agnostic on Copilot Studio, Azure AI Foundry &amp; Anthropic models. No snake oil:
-    working examples on your data before you commit.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a free AI assessment</a>
+  <h1 class="serif">We automate the workflow, not the task.</h1>
+  <p class="dek">Agents, flows, and document automation built on your own systems and data — by an
+    engineer who sat with the person doing the work first. Two weeks from shadowing to shipped.</p>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request an AI assessment</a>
     <span class="aside">We show, then propose — not the other way around</span></div>
 </div></header>
 
@@ -1377,21 +1508,22 @@
 </div></section>
 
 <section class="dark"><div class="wrap">
-  <span class="eyebrow">How we're different</span>
-  <h2 class="serif">Tool-agnostic, senior, and allergic to demos that don't ship.</h2>
-  <div class="steps">
-    <div class="step"><span class="k">The right tool</span><h3 class="serif">Simple → deep, matched to the job</h3>
-      <p>Copilot Studio for simple agents · Azure AI Foundry for deep integration · Anthropic models
-        where reasoning quality decides. Your stack, your data residency, your call.</p></div>
-    <div class="step"><span class="k">Forward-deployed</span><h3 class="serif">Engineers in your business</h3>
-      <p>Our consultants are functional + technical in one person — they sit with your AP clerk
-        before they write a line.</p></div>
-    <div class="step"><span class="k">Proof first</span><h3 class="serif">Working example, then a proposal</h3>
-      <p>The assessment ends with AI running on a slice of your real data. If it doesn't impress,
-        no phase two — that's the deal.</p></div>
-  </div>
-  <p class="sla">We also <b>train your team</b> to work with AI — not just the system we built.
-    <a href="#/managed" style="color:var(--amber)">Trainings live here →</a></p>
+  <span class="eyebrow">How a build runs</span>
+  <h2 class="serif">Two weeks, one workflow, a working agent.</h2>
+  <p class="lede">The best opportunities are never visible from a process diagram. We find them by
+    sitting next to the person doing the work — and we build with them, not for them.</p>
+  <div class="podring"><svg class="ring" viewBox="0 0 760 560" role="img" aria-labelledby="podt podd"><title id="podt">How a two-week build runs</title><desc id="podd">A repeating six-step cycle: pair an engineer with the person who owns the work; shadow the real steps for two days; rank the opportunities by repetition, impact and available data; build a working agent against the live systems; validate it with others doing the same job; ship it live and documented. Then start the next workflow.</desc><defs><marker id="podA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10z"/></marker></defs><path class="arc" d="M413.7 118.8 A150 150 0 0 1 486.1 158.9" marker-end="url(#podA)"/><path class="arc" d="M523.4 221.1 A150 150 0 0 1 524.9 303.8" marker-end="url(#podA)"/><path class="arc" d="M489.7 367.3 A150 150 0 0 1 418.8 409.9" marker-end="url(#podA)"/><path class="arc" d="M346.3 411.2 A150 150 0 0 1 273.9 371.1" marker-end="url(#podA)"/><path class="arc" d="M236.6 308.9 A150 150 0 0 1 235.1 226.2" marker-end="url(#podA)"/><path class="arc" d="M270.3 162.7 A150 150 0 0 1 341.2 120.1" marker-end="url(#podA)"/><circle class="node" cx="380.0" cy="115.0" r="27"/><g class="gl" transform="translate(369.0 104.0) scale(.92)"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g><text class="st" x="380.0" y="160.0" text-anchor="middle">1 · Pair</text><text class="sl" x="380.0" y="178.0" text-anchor="middle">Our engineer sits with the</text><text class="sl" x="380.0" y="193.0" text-anchor="middle">person who owns the work</text><circle class="node" cx="509.9" cy="190.0" r="27"/><g class="gl" transform="translate(498.9 179.0) scale(.92)"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></g><text class="st" x="549.9" y="184.0" text-anchor="start">2 · Shadow</text><text class="sl" x="549.9" y="202.0" text-anchor="start">Two days watching the real</text><text class="sl" x="549.9" y="217.0" text-anchor="start">steps — not the process doc</text><circle class="node" cx="509.9" cy="340.0" r="27"/><g class="gl" transform="translate(498.9 329.0) scale(.92)"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></g><text class="st" x="549.9" y="334.0" text-anchor="start">3 · Rank</text><text class="sl" x="549.9" y="352.0" text-anchor="start">Ordered by repetition, impact,</text><text class="sl" x="549.9" y="367.0" text-anchor="start">and the data we can reach</text><circle class="node" cx="380.0" cy="415.0" r="27"/><g class="gl" transform="translate(369.0 404.0) scale(.92)"><path d="m9 18-6-6 6-6"/><path d="m15 6 6 6-6 6"/></g><text class="st" x="380.0" y="460.0" text-anchor="middle">4 · Build</text><text class="sl" x="380.0" y="478.0" text-anchor="middle">A working agent, built against</text><text class="sl" x="380.0" y="493.0" text-anchor="middle">your live systems</text><circle class="node" cx="250.1" cy="340.0" r="27"/><g class="gl" transform="translate(239.1 329.0) scale(.92)"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></g><text class="st" x="210.1" y="334.0" text-anchor="end">5 · Validate</text><text class="sl" x="210.1" y="352.0" text-anchor="end">Tested with the others who</text><text class="sl" x="210.1" y="367.0" text-anchor="end">do the same job</text><circle class="node" cx="250.1" cy="190.0" r="27"/><g class="gl" transform="translate(239.1 179.0) scale(.92)"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></g><text class="st" x="210.1" y="184.0" text-anchor="end">6 · Ship</text><text class="sl" x="210.1" y="202.0" text-anchor="end">Live, documented, and handed</text><text class="sl" x="210.1" y="217.0" text-anchor="end">to your team</text><text class="ct" x="380" y="261" text-anchor="middle">TWO WEEKS</text><text class="cl" x="380" y="285" text-anchor="middle">one workflow, start to finish</text></svg></div>
+  <ol class="podsteps">
+    <li><div><b>Pair</b><span>Our engineer sits with the person who owns the work.</span></div></li>
+    <li><div><b>Shadow</b><span>Two days watching the real steps — not the process doc.</span></div></li>
+    <li><div><b>Rank</b><span>Opportunities ordered by repetition, impact, and the data we can reach.</span></div></li>
+    <li><div><b>Build</b><span>A working agent, built against your live systems.</span></div></li>
+    <li><div><b>Validate</b><span>Tested with the others who do the same job.</span></div></li>
+    <li><div><b>Ship</b><span>Live, documented, and handed to your team.</span></div></li>
+  </ol>
+  <p class="sla">Then we start the next workflow. Built on Copilot Studio, Azure AI Foundry, or
+    Anthropic models — <b>whichever fits the job</b>, in your tenant, on your data.
+    <a href="#/managed" style="color:var(--amber)">We train your team on it too →</a></p>
 </div></section>
 
 <section><div class="wrap">
@@ -1407,6 +1539,10 @@
     <div class="a">The winners are unglamorous: document capture, data questions answered from the
       ERP, drafted replies, forecast assists. Payback in weeks. The moonshots can wait until the
       boring agents are paying rent.</div></details>
+  <details class="faq"><summary>What do the two weeks ask of our team?</summary>
+    <div class="a">The person who owns the workflow, for about an hour a day — days one and two we
+      mostly watch. Access to the systems the work touches. Everything else keeps running as
+      normal.</div></details>
   <details class="faq"><summary>Is our data safe?</summary>
     <div class="a">Everything runs in your Microsoft tenant or a controlled environment — nothing
       trains on your data. Governance and access rules are part of every build, documented, and
@@ -1417,11 +1553,11 @@
       that's what tool-agnostic means in practice.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
+    <div><h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
       <p>Leave with two or three concrete automations, sized and prioritized — whether or not you hire us.</p></div>
-    <a class="btn" href="#/contact">Book a free AI assessment</a>
+    <a class="btn" href="#/contact">Request an AI assessment</a>
   </div>
 </div></section>
 </main>
@@ -1433,7 +1569,7 @@
   <h1 class="serif">The apps your business needs — without the software project.</h1>
   <p class="dek">Power Apps, portals, and Teams solutions that replace the spreadsheet-and-email
     processes — plus Copilot rolled out so people actually use it.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a free assessment</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request an assessment</a></div>
 </div></header>
 
 <section><div class="wrap">
@@ -1492,11 +1628,11 @@
       fear is what happens when nobody sets this up early.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
+    <div><h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
       <p>Bring your most-emailed spreadsheet. We'll sketch the app that replaces it, live.</p></div>
-    <a class="btn" href="#/contact">Book a free assessment</a>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
@@ -1508,7 +1644,7 @@
   <h1 class="serif">Your systems, looked after. Your team, leveled up.</h1>
   <p class="dek">Long-term partnership that sustains transformation — advisory and managed services
     so your systems evolve with your mission, not against it.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Get a system health check</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request a system health check</a></div>
 </div></header>
 
 <section class="alt"><div class="wrap">
@@ -1596,11 +1732,11 @@
       sticks. Recordings and materials are yours to keep.</div></details>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">Get a system health check</h2>
       <p>Whoever built it. 30 minutes to scope it, findings in writing after.</p></div>
-    <a class="btn" href="#/contact">Get a system health check</a>
+    <a class="btn" href="#/contact">Request a system health check</a>
   </div>
 </div></section>
 </main>
@@ -1673,7 +1809,7 @@
   <h2 class="serif">Running Dynamics SL? Same story, same path.</h2>
   <p class="lede">SL shares GP's sunset. Project-driven shops (SL's specialty) map to Business
     Central + Projects — and the same assessment covers you. Everything on this page applies;
-    mention SL when you book and we'll bring the SL-specific playbook.</p>
+    mention SL when you write and we'll bring the SL-specific playbook.</p>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
@@ -1707,12 +1843,12 @@
       <a href="#/cases" style="color:var(--pine)">Read the case →</a></p></div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">Plan your GP exit</h2>
       <p>Free 30-minute migration assessment: your ISV list, your timeline, your number. A senior
         consultant, not a salesperson.</p></div>
-    <a class="btn" href="#/contact">Plan your GP exit</a>
+    <a class="btn" href="#/contact">Request a migration assessment</a>
   </div>
 </div></section>
 </main>
@@ -1724,7 +1860,7 @@
   <h1 class="serif">Business Central is NAV's next version. You're closer than you think.</h1>
   <p class="dek">BC isn't a replacement for NAV — it literally is NAV, continued in the cloud. Your
     team's knowledge carries over. The question is only how your customizations come along.</p>
-  <div class="hero-cta"><a class="btn" href="#/contact">Book a free migration assessment</a></div>
+  <div class="hero-cta"><a class="btn" href="#/contact">Request a migration assessment</a></div>
 </div></header>
 
 <section><div class="wrap">
@@ -1781,11 +1917,11 @@
       it now. Less code, less maintenance, faster upgrades forever. <em>(placeholder case)</em></p></div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free migration assessment</h2>
+    <div><h2 class="serif">Request a free migration assessment</h2>
       <p>Your NAV version, your customization list, both paths costed — then you decide.</p></div>
-    <a class="btn" href="#/contact">Book a free migration assessment</a>
+    <a class="btn" href="#/contact">Request a migration assessment</a>
   </div>
 </div></section>
 </main>
@@ -1876,48 +2012,65 @@
       dashboards — the monthly reporting evening simply stopped existing. <em>(placeholder case)</em></p></div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">See if you've outgrown QuickBooks</h2>
       <p>Free 30-minute assessment. If the honest answer is "not yet," that's what you'll hear.</p></div>
-    <a class="btn" href="#/contact">See if you've outgrown QuickBooks</a>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
 
 <!-- ============================== INDUSTRIES ============================== -->
 <main data-page="industries" hidden>
-<header class="pagehero"><div class="wrap">
-  <span class="eyebrow">Industries</span>
-  <h1 class="serif">Deep in a few industries. Honest about the rest.</h1>
-  <p class="dek">Dynamics bends to many industries; these are the ones where we bring patterns, not
-    just product skills.</p>
+<header class="pagehero"><div class="wrap herogrid">
+  <div>
+    <span class="eyebrow">Industries</span>
+    <h1 class="serif">Deep in a few industries. Honest about the rest.</h1>
+    <p class="dek">Dynamics bends to many industries; these are the ones where we bring patterns, not
+      just product skills. Public sector and non-profit finance is where we go deepest.</p>
+  </div>
+  <div class="indgrid" aria-hidden="true">
+    <span class="itile on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+    <span class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></span>
+    <span class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
+    <span class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></span>
+    <span class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+    <span class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+  </div>
 </div></header>
 
 <section class="alt"><div class="wrap">
-  <div class="pillars">
-    <div class="pillar"><h3 class="serif">Distribution &amp; Wholesale</h3>
-      <p>Inventory accuracy, EDI, landed cost, and warehouses that talk to the books. Our largest
-        practice.</p></div>
-    <div class="pillar"><h3 class="serif">Manufacturing</h3>
-      <p>Light-to-mid discrete and process — BOMs, scheduling, shop-floor data into BC and F&amp;O.</p></div>
-    <div class="pillar"><h3 class="serif">Professional Services</h3>
+  <div class="pillars six">
+    <div class="pillar"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><h3 class="serif">Non-Profit</h3>
+      <p>Fund accounting without a separate fund ledger — restricted gifts, grant budgets, and
+        program-level reporting built on BC dimensions. Our deepest bench.</p></div>
+    <div class="pillar"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></span><h3 class="serif">Government</h3>
+      <p>Municipalities, authorities, and agencies: appropriation budgets, procurement trails, and
+        reporting your auditor can follow without a spreadsheet.</p></div>
+    <div class="pillar"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span><h3 class="serif">Education</h3>
+      <p>Districts, charters, and higher-ed business offices — student and tuition billing, grant
+        draw-downs, and multi-fund consolidation.</p></div>
+    <div class="pillar"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></span><h3 class="serif">Manufacturing</h3>
+      <p>Light-to-mid discrete and process — BOMs, scheduling, and shop-floor data landing in BC and
+        F&amp;O instead of a clipboard.</p></div>
+    <div class="pillar"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><h3 class="serif">Professional Services</h3>
       <p>Projects, resourcing, and revenue recognition — plus the consolidation multi-entity firms
-        fight with.</p></div>
-    <div class="pillar"><h3 class="serif">E-commerce &amp; Retail</h3>
-      <p>Storefronts wired to real inventory and finance — Shopify to BC is a path we've worn
-        smooth.</p></div>
+        fight with every close.</p></div>
+    <div class="pillar"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><h3 class="serif">Distribution &amp; Wholesale</h3>
+      <p>Inventory accuracy, EDI, landed cost, and warehouses that talk to the books — including
+        storefronts wired to real stock.</p></div>
   </div>
-  <p class="lede" style="margin-top:26px">Not on the list? The stack still fits most B2B operators —
-    book the assessment and we'll tell you plainly whether we're the right partner or can point you
-    to one.</p>
+  <p class="lede" style="margin-top:26px">Not on the list — retail, field service, construction? The
+    stack still fits most operators. Book the assessment and we'll tell you plainly whether we're the
+    right partner or can point you to one.</p>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
-    <div><h2 class="serif">Book a free 30-minute AI &amp; Systems Assessment</h2>
+    <div><h2 class="serif">Request a free 30-minute AI &amp; Systems Assessment</h2>
       <p>Industry patterns included — we've likely seen your workflow before.</p></div>
-    <a class="btn" href="#/contact">Pick a time</a>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
@@ -1975,47 +2128,66 @@
   </div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">Want a number like these?</h2>
-      <p>The assessment names your first win and sizes it — free, 30 minutes, senior consultant.</p></div>
-    <a class="btn" href="#/contact">Book a free assessment</a>
+      <p>Write to us. The assessment names your first win and sizes it — free, 30 minutes, senior consultant.</p></div>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
 
 <!-- ============================== ABOUT ============================== -->
 <main data-page="about" hidden>
-<header class="pagehero"><div class="wrap">
-  <span class="eyebrow">About DeerBrook Future</span>
-  <h1 class="serif">A small senior team. On purpose.</h1>
-  <p class="dek">DeerBrook Future is the Dynamics, data &amp; AI practice of Deer Brook Consulting.
-    We're built around forward-deployed engineers — consultants who are functional and technical in
-    the same person, who sit with your team before they build.</p>
+<header class="pagehero"><div class="wrap herogrid">
+  <div>
+    <span class="eyebrow">About DeerBrook Future</span>
+    <h1 class="serif">A small team. All of it at your table.</h1>
+    <p class="dek">DeerBrook Future is the Dynamics, data &amp; AI practice of Deer Brook Consulting.
+      You get the whole team in front of you: the PM running the plan, the
+      consultant who knows your business, and the engineer who builds the system. Ask any of them, in
+      the same conversation.</p>
+  </div>
+  <div class="fde">
+    <div class="ch">Who you can talk to</div>
+    <div class="lane">
+      <div class="lt">Most consultancies</div>
+      <svg class="scene" viewBox="0 0 400 100" role="img" aria-label="Most consultancies: the client talks to a project manager, who relays questions across a wall to a consultant, who passes them down again to a developer the client never meets"><defs><marker id="fdeA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z"/></marker><marker id="fdeF" class="faint" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z"/></marker></defs><rect class="room" x="96" y="8" width="70" height="76" rx="9"/><circle cx="30" cy="32" r="7.5"/><path d="M18 54a12 12 0 0 1 24 0"/><text x="30" y="76">Client</text><line class="flow" x1="52" y1="40" x2="86" y2="40" marker-end="url(#fdeA)"/><text x="69" y="26">asks</text><circle cx="131" cy="32" r="7.5"/><path d="M119 54a12 12 0 0 1 24 0"/><text x="131" y="76">PM</text><line class="wall" x1="186" y1="8" x2="186" y2="84"/><line class="flow dash" x1="172" y1="40" x2="232" y2="40" marker-end="url(#fdeA)"/><text x="199" y="60">relays</text><circle class="dim" cx="248" cy="32" r="7.5"/><path class="dim" d="M236 54a12 12 0 0 1 24 0"/><text class="dim" x="248" y="76">Consultant</text><line class="wall dim2" x1="296" y1="8" x2="296" y2="84"/><line class="flow dash dim2" x1="264" y1="40" x2="326" y2="40" marker-end="url(#fdeF)"/><circle class="dim2" cx="344" cy="32" r="7.5"/><path class="dim2" d="M332 54a12 12 0 0 1 24 0"/><text class="dim2" x="344" y="76">Developer</text></svg>
+    </div>
+    <div class="lane us">
+      <div class="lt">DeerBrook Future</div>
+      <svg class="scene" viewBox="0 0 400 100" role="img" aria-label="DeerBrook Future: the client talks to the project manager, the consultant and the technical engineer together in one room, with no wall between them"><defs><marker id="fdeB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z"/></marker></defs><rect class="room" x="96" y="8" width="296" height="76" rx="9"/><rect class="halo" x="224" y="16" width="40" height="47" rx="13"/><rect class="halo" x="323" y="16" width="40" height="47" rx="13"/><circle cx="30" cy="32" r="7.5"/><path d="M18 54a12 12 0 0 1 24 0"/><text x="30" y="76">Client</text><line class="flow" x1="52" y1="40" x2="86" y2="40" marker-end="url(#fdeB)"/><text x="69" y="26">asks</text><circle cx="145" cy="32" r="7.5"/><path d="M133 54a12 12 0 0 1 24 0"/><text x="145" y="76">PM</text><circle class="hi" cx="244" cy="32" r="7.5"/><path class="hi" d="M232 54a12 12 0 0 1 24 0"/><text class="hi" x="244" y="76">Consultant</text><circle class="hi" cx="343" cy="32" r="7.5"/><path class="hi" d="M331 54a12 12 0 0 1 24 0"/><text class="hi" x="343" y="76">Technical FDE</text></svg>
+    </div>
+    <p class="cap">Ask the technical question in the room. Nothing gets relayed.</p>
+  </div>
 </div></header>
 
-<section class="alt"><div class="wrap">
-  <span class="eyebrow">The promises, in writing</span>
-  <h2 class="serif">Three things we put in every agreement.</h2>
-  <div class="pillars">
-    <div class="pillar"><h3 class="serif">Fixed-price phases</h3>
-      <p>Every phase priced before it starts. Scope drift is our risk to manage, not your invoice
-        surprise. (T&amp;M available when you prefer it — your choice.)</p></div>
-    <div class="pillar"><h3 class="serif">Senior hands only</h3>
-      <p>The consultant in your kickoff is the consultant at your go-live. We don't sell partners
-        and staff juniors.</p></div>
-    <div class="pillar"><h3 class="serif">No black boxes</h3>
-      <p>Documentation, training, and admin access are deliverables. You could leave us and keep
-        everything working — that's the point.</p></div>
+<section><div class="wrap behavgrid">
+  <div>
+    <span class="eyebrow">Our three behaviors</span>
+    <p class="bnote">Everything else — practices, partner status, point of view — is downstream of
+      these three things. They are the simplest description of what Deer Brook actually does.</p>
   </div>
-</div></section>
-
-<section class="dark" style="padding:48px 0"><div class="wrap">
-  <span class="eyebrow">The stack we bet on</span>
-  <h2 class="serif" style="font-size:clamp(22px,3vw,30px)">Microsoft for the systems. Tool-agnostic for the AI.</h2>
-  <p class="lede">Business Central, Dynamics 365, and Power BI are the backbone. The AI practice is
-    built on Copilot Studio, Azure AI Foundry &amp; Anthropic models — matched to the job, not to a
-    reseller agreement.</p>
+  <div class="behavs">
+    <div class="behav">
+      <h3 class="serif"><span class="bt">01</span>Be <em>there.</em></h3>
+      <p>In the room. On the line. Inside the system when it matters. The person you meet in the
+        first conversation is the person doing the work — and they don't leave when delivery starts.
+        Presence is the precondition for everything else.</p>
+    </div>
+    <div class="behav">
+      <h3 class="serif"><span class="bt">02</span>Make the <em>move.</em></h3>
+      <p>When the analysis is in and the room is waiting, we recommend. We ship. We change the
+        configuration. Converting clarity into action is the hardest thing in consulting, and we
+        don't outsource it back to the client.</p>
+    </div>
+    <div class="behav">
+      <h3 class="serif"><span class="bt">03</span>Choose a <em>better way.</em></h3>
+      <p>The default path is rarely the best one. We push for the cleaner architecture, the more
+        durable system, the AI-native pattern over the bolt-on — and then we make it real, without
+        the upgrade theater that wastes a year of your team's time.</p>
+    </div>
+  </div>
 </div></section>
 
 <section class="alt"><div class="wrap">
@@ -2033,23 +2205,104 @@
   </div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
-  <span class="eyebrow">Offices</span>
-  <div class="split">
-    <div class="door alt"><h3 class="serif">New Gloucester, Maine</h3>
-      <p>49 Pineland Drive<br>New Gloucester, ME</p></div>
-    <div class="door alt"><h3 class="serif">North Charleston, South Carolina</h3>
-      <p>1535 Hobby Street<br>North Charleston, SC</p></div>
+<section class="dark"><div class="wrap">
+  <span class="eyebrow">The stack we bet on</span>
+  <h2 class="serif">Microsoft for the systems. Tool-agnostic for the AI.</h2>
+  <p class="lede">Three layers, one team. We commit hard where you need a decade of stability, and
+    stay deliberately unattached where the field turns over every quarter.</p>
+  <div class="stack">
+    <div class="slayer">
+      <div><span class="sk">Layer 01 · Committed</span><b>Systems of record</b>
+        <span class="sd">Picked once, kept for years. Here we commit — Microsoft.</span></div>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 96 96" aria-hidden="true"><g clip-path="url(#i0-clip0_4303_1230)"><g clip-path="url(#i0-clip1_4303_1230)"><path d="M34 33.9998C41.732 41.7317 54.268 41.7318 62 33.9999C69.732 26.2679 69.732 13.7318 62 5.99986C54.268 -1.73209 41.732 -1.73214 34 5.99979C26.268 13.7318 26.2681 26.2678 34 33.9998Z" fill="url(#i0-paint0_linear_4303_1230)"/><path d="M34 33.9998C41.732 41.7317 54.268 41.7318 62 33.9999C69.732 26.2679 69.732 13.7318 62 5.99986C54.268 -1.73209 41.732 -1.73214 34 5.99979C26.268 13.7318 26.2681 26.2678 34 33.9998Z" fill="url(#i0-paint1_radial_4303_1230)"/><path d="M34 33.9998C41.732 41.7317 54.268 41.7318 62 33.9999C69.732 26.2679 69.732 13.7318 62 5.99986C54.268 -1.73209 41.732 -1.73214 34 5.99979C26.268 13.7318 26.2681 26.2678 34 33.9998Z" fill="url(#i0-paint2_linear_4303_1230)"/><path d="M62 62.0002C54.268 54.2683 41.732 54.2682 34 62.0001C26.268 69.7321 26.268 82.2682 34 90.0001C41.732 97.7321 54.268 97.7321 62 90.0002C69.732 82.2682 69.7319 69.7322 62 62.0002Z" fill="url(#i0-paint3_linear_4303_1230)"/><path d="M62 62.0002C54.268 54.2683 41.732 54.2682 34 62.0001C26.268 69.7321 26.268 82.2682 34 90.0001C41.732 97.7321 54.268 97.7321 62 90.0002C69.732 82.2682 69.7319 69.7322 62 62.0002Z" fill="url(#i0-paint4_linear_4303_1230)"/><path d="M62 62.0002C54.268 54.2683 41.732 54.2682 34 62.0001C26.268 69.7321 26.268 82.2682 34 90.0001C41.732 97.7321 54.268 97.7321 62 90.0002C69.732 82.2682 69.7319 69.7322 62 62.0002Z" fill="url(#i0-paint5_radial_4303_1230)"/><path d="M34 62C41.732 69.732 54.268 69.732 62 62C69.732 54.268 69.732 41.732 62 34C54.268 26.268 41.732 26.268 34 34C26.268 41.732 26.268 54.268 34 62Z" fill="url(#i0-paint6_linear_4303_1230)"/><path d="M34 62C41.732 69.732 54.268 69.732 62 62C69.732 54.268 69.732 41.732 62 34C54.268 26.268 41.732 26.268 34 34C26.268 41.732 26.268 54.268 34 62Z" fill="url(#i0-paint7_radial_4303_1230)"/><path d="M34 62C41.732 69.732 54.268 69.732 62 62C69.732 54.268 69.732 41.732 62 34C54.268 26.268 41.732 26.268 34 34C26.268 41.732 26.268 54.268 34 62Z" fill="url(#i0-paint8_radial_4303_1230)"/><path d="M6.00002 34L34 5.99998C26.2681 13.732 26.268 26.2681 34 34.0001C41.732 41.7321 41.732 54.2681 34 62.0001C26.268 69.732 13.732 69.732 6.00004 62C-1.73195 54.268 -1.73198 41.732 6.00002 34Z" fill="url(#i0-paint9_linear_4303_1230)"/><path d="M6.00002 34L34 5.99998C26.2681 13.732 26.268 26.2681 34 34.0001C41.732 41.7321 41.732 54.2681 34 62.0001C26.268 69.732 13.732 69.732 6.00004 62C-1.73195 54.268 -1.73198 41.732 6.00002 34Z" fill="url(#i0-paint10_radial_4303_1230)"/><path d="M90 62L62 90C69.7319 82.268 69.732 69.7319 62 61.9999C54.268 54.2679 54.268 41.7319 62 33.9999C69.732 26.268 82.268 26.268 90 34C97.732 41.732 97.732 54.268 90 62Z" fill="url(#i0-paint11_linear_4303_1230)"/></g></g><defs><linearGradient id="i0-paint0_linear_4303_1230" x1="30" y1="9.49999" x2="67" y2="25" gradientUnits="userSpaceOnUse"><stop stop-color="#0C74A1"/><stop offset="0.468152" stop-color="#1384B1"/><stop offset="1" stop-color="#16BBDA"/></linearGradient><radialGradient id="i0-paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48 48) rotate(-90) scale(29.5 29.5)"><stop offset="0.456329" stop-color="#0057AA"/><stop offset="1" stop-color="#1384B1" stop-opacity="0"/></radialGradient><linearGradient id="i0-paint2_linear_4303_1230" x1="49" y1="14" x2="26.5" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#1384B1" stop-opacity="0"/><stop offset="1" stop-color="#004695"/></linearGradient><linearGradient id="i0-paint3_linear_4303_1230" x1="68.5" y1="79.5" x2="29" y2="71" gradientUnits="userSpaceOnUse"><stop stop-color="#06517B"/><stop offset="0.508523" stop-color="#09638E"/><stop offset="1" stop-color="#0C74A1"/></linearGradient><linearGradient id="i0-paint4_linear_4303_1230" x1="53" y1="76" x2="69.5" y2="72" gradientUnits="userSpaceOnUse"><stop stop-color="#09638E" stop-opacity="0"/><stop offset="1" stop-color="#003580"/></linearGradient><radialGradient id="i0-paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48 48) rotate(90) scale(36 36)"><stop offset="0.423337" stop-color="#003580"/><stop offset="1" stop-color="#09638E" stop-opacity="0"/></radialGradient><linearGradient id="i0-paint6_linear_4303_1230" x1="44.5" y1="29.5" x2="45" y2="68.5" gradientUnits="userSpaceOnUse"><stop stop-color="#43E5CA"/><stop offset="0.371719" stop-color="#26CFE8"/><stop offset="1" stop-color="#1384B1"/></linearGradient><radialGradient id="i0-paint7_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(76 48) rotate(90) scale(32)"><stop offset="0.399827" stop-color="#09638E"/><stop offset="1" stop-color="#119FC5" stop-opacity="0"/></radialGradient><radialGradient id="i0-paint8_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 48) rotate(90) scale(34)"><stop offset="0.399827" stop-color="#09638E"/><stop offset="1" stop-color="#119FC5" stop-opacity="0"/></radialGradient><linearGradient id="i0-paint9_linear_4303_1230" x1="14.5" y1="26" x2="43.5" y2="55" gradientUnits="userSpaceOnUse"><stop stop-color="#B6F6C7"/><stop offset="0.277847" stop-color="#43E5CA"/><stop offset="1" stop-color="#26CFE8"/></linearGradient><radialGradient id="i0-paint10_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.5 26) rotate(65.4495) scale(44.5253 44.8148)"><stop offset="0.585411" stop-color="#2BDABE" stop-opacity="0"/><stop offset="1" stop-color="#119FC5"/></radialGradient><linearGradient id="i0-paint11_linear_4303_1230" x1="63" y1="30" x2="92.5" y2="59.5" gradientUnits="userSpaceOnUse"><stop stop-color="#9FF2E4"/><stop offset="0.266186" stop-color="#2BDABE"/><stop offset="0.620556" stop-color="#16BBDA"/><stop offset="1" stop-color="#1384B1"/></linearGradient><clipPath id="i0-clip0_4303_1230"><rect width="96" height="96" fill="white"/></clipPath><clipPath id="i0-clip1_4303_1230"><rect width="96" height="96" fill="white"/></clipPath></defs></svg>Business Central</span>
+        <span class="chip"><svg viewBox="0 0 96 96" aria-hidden="true"><path d="M38.4997 35.264C40.2039 33.5578 42.9686 33.5566 44.6744 35.2612L78.7179 69.282L59.4249 88.5749C49.5854 98.4143 33.6332 98.4163 23.7912 88.5793L9.13285 73.9283C6.57551 71.3722 6.57378 67.2272 9.12898 64.669L38.4997 35.264Z" fill="url(#i1-paint0_linear_4303_1230)"/><path d="M38.4997 35.264C40.2039 33.5578 42.9686 33.5566 44.6744 35.2612L78.7179 69.282L59.4249 88.5749C49.5854 98.4143 33.6332 98.4163 23.7912 88.5793L9.13285 73.9283C6.57551 71.3722 6.57378 67.2272 9.12898 64.669L38.4997 35.264Z" fill="url(#i1-paint1_radial_4303_1230)"/><path d="M38.4997 35.264C40.2039 33.5578 42.9686 33.5566 44.6744 35.2612L78.7179 69.282L59.4249 88.5749C49.5854 98.4143 33.6332 98.4163 23.7912 88.5793L9.13285 73.9283C6.57551 71.3722 6.57378 67.2272 9.12898 64.669L38.4997 35.264Z" fill="url(#i1-paint2_linear_4303_1230)"/><path d="M78.7173 26.7173L89.1956 37.1962C95.1625 43.1634 95.1622 52.8378 89.1951 58.8046L67.2576 80.7414L67.9127 80.0863C73.8798 74.1192 73.8797 64.4444 67.9123 58.4774L57.4349 48.0007L78.7173 26.7173Z" fill="url(#i1-paint3_linear_4303_1230)"/><path d="M78.7173 26.7173L89.1956 37.1962C95.1625 43.1634 95.1622 52.8378 89.1951 58.8046L67.2576 80.7414L67.9127 80.0863C73.8798 74.1192 73.8797 64.4444 67.9123 58.4774L57.4349 48.0007L78.7173 26.7173Z" fill="url(#i1-paint4_radial_4303_1230)"/><path d="M23.7907 7.42894C33.6319 -2.41227 49.5876 -2.41226 59.4288 7.42895L91.2682 39.2684L89.5214 37.5216C83.5544 31.5545 73.88 31.5545 67.9129 37.5216L46.2401 59.1944C43.6828 61.7517 39.5366 61.7517 36.9793 59.1944L9.13269 31.3477C6.57539 28.7904 6.57539 24.6442 9.13269 22.0869L23.7907 7.42894Z" fill="url(#i1-paint5_linear_4303_1230)"/><path d="M23.7907 7.42894C33.6319 -2.41227 49.5876 -2.41226 59.4288 7.42895L91.2682 39.2684L89.5214 37.5216C83.5544 31.5545 73.88 31.5545 67.9129 37.5216L46.2401 59.1944C43.6828 61.7517 39.5366 61.7517 36.9793 59.1944L9.13269 31.3477C6.57539 28.7904 6.57539 24.6442 9.13269 22.0869L23.7907 7.42894Z" fill="url(#i1-paint6_linear_4303_1230)"/><path d="M36.9792 36.8051C39.5365 34.2476 43.6829 34.2476 46.2403 36.8051L57.4351 48.0006L46.24 59.195C43.6827 61.7521 39.5368 61.7521 36.9795 59.1951L25.7843 48.0006L36.9792 36.8051Z" fill="url(#i1-paint7_linear_4303_1230)"/><defs><linearGradient id="i1-paint0_linear_4303_1230" x1="41.598" y1="32.1621" x2="39.6927" y2="98.9342" gradientUnits="userSpaceOnUse"><stop stop-color="#8B52F4"/><stop offset="1" stop-color="#3D35B1"/></linearGradient><radialGradient id="i1-paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41.064 47.454) rotate(90) scale(21.2822 21.284)"><stop offset="0.4" stop-color="#3D35B1"/><stop offset="1" stop-color="#3D35B1" stop-opacity="0"/></radialGradient><linearGradient id="i1-paint2_linear_4303_1230" x1="69.986" y1="54.0024" x2="49.2495" y2="63.825" gradientUnits="userSpaceOnUse"><stop stop-color="#3D35B1"/><stop offset="1" stop-color="#3D35B1" stop-opacity="0"/></linearGradient><linearGradient id="i1-paint3_linear_4303_1230" x1="79.263" y1="33.8114" x2="80.3544" y2="68.736" gradientUnits="userSpaceOnUse"><stop stop-color="#7A41DC"/><stop offset="1" stop-color="#AC80FF"/></linearGradient><radialGradient id="i1-paint4_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(78.1716 76.3758) rotate(-79.0889) scale(46.1268 30.0978)"><stop offset="0.647013" stop-color="#8B52F4" stop-opacity="0"/><stop offset="1" stop-color="#6D37CD"/></radialGradient><linearGradient id="i1-paint5_linear_4303_1230" x1="42.7011" y1="-8.20735" x2="44.3382" y2="60.5506" gradientUnits="userSpaceOnUse"><stop stop-color="#EBC7FA"/><stop offset="1" stop-color="#BD96FF"/></linearGradient><linearGradient id="i1-paint6_linear_4303_1230" x1="44.8839" y1="20.1689" x2="59.0721" y2="5.9808" gradientUnits="userSpaceOnUse"><stop stop-color="#CEB0FF" stop-opacity="0"/><stop offset="1" stop-color="#FECBE6"/></linearGradient><linearGradient id="i1-paint7_linear_4303_1230" x1="46" y1="59.5" x2="46" y2="26.5" gradientUnits="userSpaceOnUse"><stop stop-color="#9C6CFE"/><stop offset="1" stop-color="#BD96FF"/></linearGradient></defs></svg>D365 Finance &amp; Operations</span>
+        <span class="chip"><svg viewBox="0 0 96 96" aria-hidden="true"><g clip-path="url(#i2-clip0_4303_1230)"><g clip-path="url(#i2-clip1_4303_1230)"><path d="M0 48C0 41.3726 5.37258 36 12 36H16V60H12C5.37258 60 0 54.6274 0 48Z" fill="url(#i2-paint0_linear_4303_1230)"/><path d="M0 48C0 41.3726 5.37258 36 12 36H16V60H12C5.37258 60 0 54.6274 0 48Z" fill="url(#i2-paint1_radial_4303_1230)"/><path d="M16 30C16 23.3726 21.3726 18 28 18H32V60H16V30Z" fill="url(#i2-paint2_linear_4303_1230)"/><path d="M16 30C16 23.3726 21.3726 18 28 18H32V60H16V30Z" fill="url(#i2-paint3_linear_4303_1230)" fill-opacity="0.6"/><path d="M32 12C32 5.37258 37.3726 0 44 0H48C55 0 60 1.54995 60 1.54995V54C60 57.3137 57.3137 60 54 60H32V12Z" fill="url(#i2-paint4_linear_4303_1230)"/><path d="M32 12C32 5.37258 37.3726 0 44 0H48C55 0 60 1.54995 60 1.54995V54C60 57.3137 57.3137 60 54 60H32V12Z" fill="url(#i2-paint5_linear_4303_1230)" fill-opacity="0.5"/><path d="M48 6.00024C48 2.68659 50.6966 -0.038762 53.9844 0.374268C61.3571 1.30072 68.4432 3.93058 74.667 8.08911C82.5606 13.3634 88.7137 20.8602 92.3467 29.6311C95.9796 38.4019 96.9302 48.0535 95.0781 57.3645C93.226 66.6754 88.6541 75.2278 81.9414 81.9407C75.2285 88.6536 66.6753 93.2253 57.3643 95.0774C48.0532 96.9295 38.4017 95.979 29.6309 92.3459C20.8602 88.7129 13.3641 82.5606 8.08984 74.6672C2.81563 66.7738 7.16976e-05 57.4936 0 48.0002C0.000195854 54.6275 5.3727 60.0002 12 60.0002H42C45.3136 60.0002 47.9998 57.3138 48 54.0002V6.00024Z" fill="url(#i2-paint6_radial_4303_1230)"/><path d="M48 6.00024C48 2.68659 50.6966 -0.038762 53.9844 0.374268C61.3571 1.30072 68.4432 3.93058 74.667 8.08911C82.5606 13.3634 88.7137 20.8602 92.3467 29.6311C95.9796 38.4019 96.9302 48.0535 95.0781 57.3645C93.226 66.6754 88.6541 75.2278 81.9414 81.9407C75.2285 88.6536 66.6753 93.2253 57.3643 95.0774C48.0532 96.9295 38.4017 95.979 29.6309 92.3459C20.8602 88.7129 13.3641 82.5606 8.08984 74.6672C2.81563 66.7738 7.16976e-05 57.4936 0 48.0002C0.000195854 54.6275 5.3727 60.0002 12 60.0002H42C45.3136 60.0002 47.9998 57.3138 48 54.0002V6.00024Z" fill="url(#i2-paint7_radial_4303_1230)"/><path opacity="0.6" d="M96 48C96 41.3726 90.6274 36 84 36H48V54C48 57.3137 45.3137 60 42 60H40H84C90.6274 60 96 54.6274 96 48Z" fill="url(#i2-paint8_radial_4303_1230)"/></g></g><defs><linearGradient id="i2-paint0_linear_4303_1230" x1="0.228189" y1="52.4858" x2="15.9261" y2="53.8502" gradientUnits="userSpaceOnUse"><stop stop-color="#1B44B1"/><stop offset="1" stop-color="#102784"/></linearGradient><radialGradient id="i2-paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.5 36) rotate(90) scale(24 17.6815)"><stop offset="0.57876" stop-color="#102784" stop-opacity="0"/><stop offset="1" stop-color="#102784"/></radialGradient><linearGradient id="i2-paint2_linear_4303_1230" x1="24" y1="18" x2="24" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#0094F0"/><stop offset="0.775536" stop-color="#2052CB"/><stop offset="1" stop-color="#163697"/></linearGradient><linearGradient id="i2-paint3_linear_4303_1230" x1="24" y1="45" x2="32.0052" y2="44.6047" gradientUnits="userSpaceOnUse"><stop stop-color="#0078D4" stop-opacity="0"/><stop offset="1" stop-color="#2052CB"/></linearGradient><linearGradient id="i2-paint4_linear_4303_1230" x1="40" y1="0" x2="40" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#26CFE8"/><stop offset="0.409431" stop-color="#0FAFFF"/><stop offset="0.809746" stop-color="#367AF2"/><stop offset="1" stop-color="#2052CB"/></linearGradient><linearGradient id="i2-paint5_linear_4303_1230" x1="40.8889" y1="34.5" x2="48.8889" y2="34.5" gradientUnits="userSpaceOnUse"><stop stop-color="#0094F0" stop-opacity="0"/><stop offset="1" stop-color="#2764E7"/></linearGradient><radialGradient id="i2-paint6_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(63.3122 13.9524) rotate(90) scale(89.1508 89.1508)"><stop offset="0.062127" stop-color="#6FE8F5"/><stop offset="0.288121" stop-color="#3BD5FF"/><stop offset="0.68128" stop-color="#0094F0"/><stop offset="1" stop-color="#2052CB"/></radialGradient><radialGradient id="i2-paint7_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41 63.9998) rotate(-90) scale(68)"><stop offset="0.542484" stop-color="#29C3FF" stop-opacity="0"/><stop offset="1" stop-color="#73EDD8"/></radialGradient><radialGradient id="i2-paint8_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46 60) scale(62 62)"><stop offset="0.459307" stop-color="#3BD5FF"/><stop offset="1" stop-color="#3BD5FF" stop-opacity="0"/></radialGradient><clipPath id="i2-clip0_4303_1230"><rect width="96" height="96" fill="white"/></clipPath><clipPath id="i2-clip1_4303_1230"><rect width="96" height="96" fill="white"/></clipPath></defs></svg>Dynamics 365 CRM</span>
+        <span class="chip"><svg viewBox="0 0 96 96" aria-hidden="true"><g clip-path="url(#i3-clip0_4303_1230)"><g clip-path="url(#i3-clip1_4303_1230)"><path d="M38.1026 71.6921L31.6529 91.0414C30.1188 95.6436 24.4821 97.328 20.6746 94.322L4.89891 81.8676C1.95908 79.5466 0.78931 75.6321 1.97376 72.0787C3.18381 68.4486 6.58102 66 10.4075 66H46C42.4169 66 39.2357 68.2928 38.1026 71.6921Z" fill="url(#i3-paint0_linear_4303_1230)"/><path d="M38.1026 71.6921L31.6529 91.0414C30.1188 95.6436 24.4821 97.328 20.6746 94.322L4.89891 81.8676C1.95908 79.5466 0.78931 75.6321 1.97376 72.0787C3.18381 68.4486 6.58102 66 10.4075 66H46C42.4169 66 39.2357 68.2928 38.1026 71.6921Z" fill="url(#i3-paint1_radial_4303_1230)"/><path d="M24.3245 30H60.8335C74.7805 30 89.1466 40.0237 85.2858 51.5882L95.406 21.2744C98.1908 13.1151 89.4514 0 69.8184 0H30.3245C27.7419 0 25.4491 1.65259 24.6324 4.10265L18.6324 22.1026C17.3374 25.9878 20.2292 30 24.3245 30Z" fill="url(#i3-paint2_linear_4303_1230)"/><path d="M24.3245 30H60.8335C74.7805 30 89.1466 40.0237 85.2858 51.5882L95.406 21.2744C98.1908 13.1151 89.4514 0 69.8184 0H30.3245C27.7419 0 25.4491 1.65259 24.6324 4.10265L18.6324 22.1026C17.3374 25.9878 20.2292 30 24.3245 30Z" fill="url(#i3-paint3_linear_4303_1230)"/><path d="M59.8325 65.9999L11.2076 65.9999C6.9044 65.9999 3.08387 68.7528 1.72181 72.8344L11.7208 42.8376C13.0819 38.7542 16.9033 35.9999 21.2076 35.9999L69.8147 35.9999C83.2662 35.9999 92.6205 29.6694 95.5007 21.0261L85.2939 51.6972C82.952 58.6938 74.4997 65.9999 59.8325 65.9999Z" fill="url(#i3-paint4_linear_4303_1230)"/><path d="M59.8325 65.9999L11.2076 65.9999C6.9044 65.9999 3.08387 68.7528 1.72181 72.8344L11.7208 42.8376C13.0819 38.7542 16.9033 35.9999 21.2076 35.9999L69.8147 35.9999C83.2662 35.9999 92.6205 29.6694 95.5007 21.0261L85.2939 51.6972C82.952 58.6938 74.4997 65.9999 59.8325 65.9999Z" fill="url(#i3-paint5_linear_4303_1230)"/></g></g><defs><linearGradient id="i3-paint0_linear_4303_1230" x1="3.99902" y1="70" x2="15.999" y2="105.5" gradientUnits="userSpaceOnUse"><stop stop-color="#309C61"/><stop offset="1" stop-color="#1EC8B0"/></linearGradient><radialGradient id="i3-paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(25.4991 102) rotate(-90) scale(44 55.1631)"><stop offset="0.615451" stop-color="#1E794A" stop-opacity="0"/><stop offset="1" stop-color="#1E794A"/></radialGradient><linearGradient id="i3-paint2_linear_4303_1230" x1="30" y1="12.5" x2="90.4155" y2="29.1851" gradientUnits="userSpaceOnUse"><stop stop-color="#20AC9D"/><stop offset="0.568447" stop-color="#1A7F7C"/><stop offset="1" stop-color="#024169"/></linearGradient><linearGradient id="i3-paint3_linear_4303_1230" x1="60" y1="1.00002" x2="75.5" y2="42.5" gradientUnits="userSpaceOnUse"><stop stop-color="#1A7F7C" stop-opacity="0"/><stop offset="0.588659" stop-color="#004695" stop-opacity="0.6"/><stop offset="1" stop-color="#003580"/></linearGradient><linearGradient id="i3-paint4_linear_4303_1230" x1="16" y1="40.9999" x2="74" y2="65.4999" gradientUnits="userSpaceOnUse"><stop stop-color="#76EB95"/><stop offset="0.179334" stop-color="#52D17C"/><stop offset="0.713946" stop-color="#22918B"/><stop offset="1" stop-color="#0C74A1"/></linearGradient><linearGradient id="i3-paint5_linear_4303_1230" x1="21" y1="53.4999" x2="11.5" y2="49.4999" gradientUnits="userSpaceOnUse"><stop stop-color="#52D17C" stop-opacity="0"/><stop offset="1" stop-color="#B0F098"/></linearGradient><clipPath id="i3-clip0_4303_1230"><rect width="96" height="96" fill="white"/></clipPath><clipPath id="i3-clip1_4303_1230"><rect width="96" height="96" fill="white"/></clipPath></defs></svg>Power Platform</span>
+      </div>
+    </div>
+    <div class="slayer">
+      <div><span class="sk">Layer 02 · Committed</span><b>Data &amp; reporting</b>
+        <span class="sd">One warehouse, one definition of a number. Built on the layer above.</span></div>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 256 256" aria-hidden="true"><g clip-path="url(#i4-clip0_1263_124590)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.496 176.634L6.74669 190.356C5.34937 194.746 3.39205 201.194 2.33606 206.932C0.832069 210.9 0.0107422 215.204 0.0107422 219.7C0.0107422 238.239 14.016 253.502 32.0212 255.497C37.0878 256.228 42.8211 256.19 49.2477 255.246L78.7728 251.172C86.1967 250.148 92.2927 244.788 94.266 237.556L114.586 162.922L10.496 176.634Z" fill="url(#i4-paint0_linear_1263_124590)"/><path d="M39.2942 180.17C8.17444 184.991 1.78516 208.474 1.78516 208.474L31.5876 98.9708L187.314 77.9043L166.077 155.04C164.973 159.173 161.501 162.341 157.197 162.997L156.328 163.141L38.4195 180.32L39.2942 180.17Z" fill="url(#i4-paint1_linear_1263_124590)"/><path d="M39.2942 180.17C8.17444 184.991 1.78516 208.474 1.78516 208.474L31.5876 98.9708L187.314 77.9043L166.077 155.04C164.973 159.173 161.501 162.341 157.197 162.997L156.328 163.141L38.4195 180.32L39.2942 180.17Z" fill="url(#i4-paint2_linear_1263_124590)" fill-opacity="0.8"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint3_linear_1263_124590)"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint4_linear_1263_124590)"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint5_linear_1263_124590)"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint6_linear_1263_124590)"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint7_linear_1263_124590)"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint8_linear_1263_124590)"/><path d="M56.9532 110.303L229.352 84.8367C233.453 84.2767 236.776 81.274 237.821 77.3434L255.613 12.9546C255.858 12.0799 255.986 11.1572 255.986 10.2079C255.986 4.57063 251.421 0 245.778 0C245.341 0 244.904 0.0266665 244.482 0.0799994L79.9824 24.3891C62.1158 27.2585 47.6893 40.437 43.0067 57.6262L19.2842 143.604C24.0468 126.212 26.9748 115.727 56.9532 110.303Z" fill="url(#i4-paint9_linear_1263_124590)" fill-opacity="0.4"/><path d="M56.9527 110.309C31.9876 114.827 25.7903 122.869 21.6623 135.472L1.78516 208.49C1.78516 208.49 8.13711 185.242 38.8782 180.271L156.333 163.162L157.203 163.018C161.507 162.362 164.979 159.189 166.083 155.061L183.554 91.6055L56.9581 110.309H56.9527Z" fill="url(#i4-paint10_linear_1263_124590)"/><path d="M56.9527 110.309C31.9876 114.827 25.7903 122.869 21.6623 135.472L1.78516 208.49C1.78516 208.49 8.13711 185.242 38.8782 180.271L156.333 163.162L157.203 163.018C161.507 162.362 164.979 159.189 166.083 155.061L183.554 91.6055L56.9581 110.309H56.9527Z" fill="url(#i4-paint11_linear_1263_124590)" fill-opacity="0.2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M38.8798 180.272C12.9013 184.475 4.36804 201.68 2.33606 206.923C0.832069 210.901 0.0107422 215.205 0.0107422 219.701C0.0107422 238.24 14.016 253.504 32.0212 255.498C37.0878 256.229 42.8211 256.192 49.2477 255.248L78.7728 251.173C86.1967 250.149 92.2927 244.789 94.266 237.557L112.789 169.51L38.8851 180.278L38.8798 180.272Z" fill="url(#i4-paint12_linear_1263_124590)"/></g><defs><linearGradient id="i4-paint0_linear_1263_124590" x1="57.2956" y1="256.004" x2="57.2956" y2="162.922" gradientUnits="userSpaceOnUse"><stop offset="0.056" stop-color="#2AAC94"/><stop offset="0.155" stop-color="#239C87"/><stop offset="0.372" stop-color="#177E71"/><stop offset="0.588" stop-color="#0E6961"/><stop offset="0.799" stop-color="#095D57"/><stop offset="1" stop-color="#085954"/></linearGradient><linearGradient id="i4-paint1_linear_1263_124590" x1="174.916" y1="188.465" x2="85.0325" y2="90.7042" gradientUnits="userSpaceOnUse"><stop offset="0.0417478" stop-color="#ABE88E"/><stop offset="0.548926" stop-color="#2AAA92"/><stop offset="0.906" stop-color="#117865"/></linearGradient><linearGradient id="i4-paint2_linear_1263_124590" x1="-45.966" y1="183.712" x2="39.5711" y2="154.542" gradientUnits="userSpaceOnUse"><stop stop-color="#6AD6F9"/><stop offset="1" stop-color="#6AD6F9" stop-opacity="0"/></linearGradient><linearGradient id="i4-paint3_linear_1263_124590" x1="19.2842" y1="71.8021" x2="246.968" y2="71.8021" gradientUnits="userSpaceOnUse"><stop offset="0.043" stop-color="#25FFD4"/><stop offset="0.874" stop-color="#55DDB9"/></linearGradient><linearGradient id="i4-paint4_linear_1263_124590" x1="106.921" y1="9.90926" x2="155.747" y2="114.612" gradientUnits="userSpaceOnUse"><stop stop-color="#F4E084" stop-opacity="0.6"/><stop offset="0.534" stop-color="#F4E084" stop-opacity="0"/></linearGradient><linearGradient id="i4-paint5_linear_1263_124590" x1="188.162" y1="-55.2641" x2="253.98" y2="45.835" gradientUnits="userSpaceOnUse"><stop stop-color="#ABF5E2"/><stop offset="1" stop-color="#4EE6BD"/></linearGradient><linearGradient id="i4-paint6_linear_1263_124590" x1="137.635" y1="0" x2="137.635" y2="143.604" gradientUnits="userSpaceOnUse"><stop stop-color="#1F937E"/><stop offset="1" stop-color="#9EE09F"/></linearGradient><linearGradient id="i4-paint7_linear_1263_124590" x1="137.635" y1="0" x2="137.635" y2="143.604" gradientUnits="userSpaceOnUse"><stop stop-color="#1F937E"/><stop offset="1" stop-color="#C0ECC7"/></linearGradient><linearGradient id="i4-paint8_linear_1263_124590" x1="19.2842" y1="39.9783" x2="224.382" y2="135.216" gradientUnits="userSpaceOnUse"><stop stop-color="#6AD6F9"/><stop offset="0.229501" stop-color="#60E9D0"/><stop offset="0.650711" stop-color="#6DE9BB"/><stop offset="0.99354" stop-color="#ABE88E"/></linearGradient><linearGradient id="i4-paint9_linear_1263_124590" x1="38.258" y1="57.8" x2="149.781" y2="82.466" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="0.458511" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="i4-paint10_linear_1263_124590" x1="75.237" y1="153.341" x2="77.8722" y2="75.1328" gradientUnits="userSpaceOnUse"><stop offset="0.204642" stop-color="#063D3B" stop-opacity="0"/><stop offset="0.58553" stop-color="#063D3B" stop-opacity="0.236587"/><stop offset="0.872285" stop-color="#063D3B" stop-opacity="0.75"/></linearGradient><linearGradient id="i4-paint11_linear_1263_124590" x1="-7.61797" y1="145.563" x2="87.6861" y2="163.487" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="0.458511" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="i4-paint12_linear_1263_124590" x1="61.2263" y1="230.213" x2="42.6359" y2="139.292" gradientUnits="userSpaceOnUse"><stop offset="0.064" stop-color="#063D3B" stop-opacity="0"/><stop offset="0.17" stop-color="#063D3B" stop-opacity="0.135"/><stop offset="0.562" stop-color="#063D3B" stop-opacity="0.599"/><stop offset="0.85" stop-color="#063D3B" stop-opacity="0.9"/><stop offset="1" stop-color="#063D3B"/></linearGradient><clipPath id="i4-clip0_1263_124590"><rect width="255.998" height="255.998" fill="white"/></clipPath></defs></svg>Microsoft Fabric</span>
+        <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><mask id="i5-mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="0" width="18" height="24"><path d="M13 1C13 0.447715 13.4477 0 14 0H20C20.5523 0 21 0.447715 21 1V23C21 23.5523 20.5523 24 20 24H4C3.44772 24 3 23.5523 3 23V13C3 12.4477 3.44772 12 4 12H8.00002V7C8.00002 6.44772 8.44775 6 9.00002 6H13V1Z" fill="white"/></mask><g mask="url(#i5-mask0)"><path d="M21 0V24H13V0H21Z" fill="url(#i5-paint0_linear)"/><g filter="url(#i5-filter0_f)"><path d="M16 7.10001V24.1H8V6.10001H15C15.5523 6.10001 16 6.54773 16 7.10001Z" fill="black" fill-opacity="0.2"/></g><g filter="url(#i5-filter1_f)"><path d="M16 7.5V24.5H8V6.5H15C15.5523 6.5 16 6.94772 16 7.5Z" fill="black" fill-opacity="0.18"/></g><path d="M16 7V24H8V6H15C15.5523 6 16 6.44772 16 7Z" fill="url(#i5-paint1_linear)"/><path d="M2.99995 12V24H11V13C11 12.4477 10.5522 12 9.99995 12H2.99995Z" fill="url(#i5-paint2_linear)"/></g><defs><filter id="i5-filter0_f" x="7.2" y="5.30001" width="9.6" height="19.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="0.4" result="effect1_foregroundBlur"/></filter><filter id="i5-filter1_f" x="0" y="-1.5" width="24" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur"/></filter><linearGradient id="i5-paint0_linear" x1="11.6666" y1="-3.20674e-07" x2="22.2163" y2="22.3616" gradientUnits="userSpaceOnUse"><stop stop-color="#E6AD10"/><stop offset="1" stop-color="#C87E0E"/></linearGradient><linearGradient id="i5-paint1_linear" x1="7.99935" y1="6" x2="16.8715" y2="23.2065" gradientUnits="userSpaceOnUse"><stop stop-color="#F6D751"/><stop offset="1" stop-color="#E6AD10"/></linearGradient><linearGradient id="i5-paint2_linear" x1="2.9993" y1="12" x2="7.902" y2="23.6194" gradientUnits="userSpaceOnUse"><stop stop-color="#F9E589"/><stop offset="1" stop-color="#F6D751"/></linearGradient></defs></svg>Power BI</span>
+        <span class="chip"><svg viewBox="0 0 18 18" aria-hidden="true"><defs><radialGradient id="i6-b" cx="9.36" cy="10.57" r="7.07" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f2f2f2"/><stop offset=".58" stop-color="#eee"/><stop offset="1" stop-color="#e6e6e6"/></radialGradient><linearGradient id="i6-a" x1="2.59" y1="10.16" x2="15.41" y2="10.16" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#005ba1"/><stop offset=".07" stop-color="#0060a9"/><stop offset=".36" stop-color="#0071c8"/><stop offset=".52" stop-color="#0078d4"/><stop offset=".64" stop-color="#0074cd"/><stop offset=".82" stop-color="#006abb"/><stop offset="1" stop-color="#005ba1"/></linearGradient></defs><path d="M9 5.14c-3.54 0-6.41-1-6.41-2.32v12.36c0 1.27 2.82 2.3 6.32 2.32H9c3.54 0 6.41-1 6.41-2.32V2.82c0 1.29-2.87 2.32-6.41 2.32z" fill="url(#i6-a)"/><path d="M15.41 2.82c0 1.29-2.87 2.32-6.41 2.32s-6.41-1-6.41-2.32S5.46.5 9 .5s6.41 1 6.41 2.32" fill="#e8e8e8"/><path d="M13.92 2.63c0 .82-2.21 1.48-4.92 1.48s-4.92-.66-4.92-1.48S6.29 1.16 9 1.16s4.92.66 4.92 1.47" fill="#50e6ff"/><path d="M9 3a11.55 11.55 0 00-3.89.57A11.42 11.42 0 009 4.11a11.15 11.15 0 003.89-.58A11.84 11.84 0 009 3z" fill="#198ab3"/><path d="M12.9 11.4V8H12v4.13h2.46v-.73zM5.76 9.73a1.83 1.83 0 01-.51-.31.44.44 0 01-.12-.32.34.34 0 01.15-.3.68.68 0 01.42-.12 1.62 1.62 0 011 .29v-.86a2.58 2.58 0 00-1-.16 1.64 1.64 0 00-1.09.34 1.08 1.08 0 00-.42.89c0 .51.32.91 1 1.21a2.88 2.88 0 01.62.36.42.42 0 01.15.32.38.38 0 01-.16.31.81.81 0 01-.45.11 1.66 1.66 0 01-1.09-.42V12a2.17 2.17 0 001.07.24 1.88 1.88 0 001.18-.33 1.08 1.08 0 00.33-.91 1.05 1.05 0 00-.25-.7 2.42 2.42 0 00-.83-.57zM11 11.32a2.34 2.34 0 00.33-1.26A2.32 2.32 0 0011 9a1.81 1.81 0 00-.7-.75 2 2 0 00-1-.26 2.11 2.11 0 00-1.08.27 1.86 1.86 0 00-.73.74 2.46 2.46 0 00-.26 1.14 2.26 2.26 0 00.24 1 1.76 1.76 0 00.69.74 2.06 2.06 0 001 .3l.86 1h1.21L10 12.08a1.79 1.79 0 001-.76zm-1-.25a.94.94 0 01-.76.35.92.92 0 01-.76-.36 1.52 1.52 0 01-.29-1 1.53 1.53 0 01.29-1 1 1 0 01.78-.37.87.87 0 01.75.37 1.62 1.62 0 01.27 1 1.46 1.46 0 01-.28 1.01z" fill="url(#i6-b)"/></svg>Azure SQL</span>
+        <span class="chip"><svg viewBox="0 0 96 96" aria-hidden="true"><g clip-path="url(#i7-clip0_4303_1230)"><g clip-path="url(#i7-clip1_4303_1230)"><g clip-path="url(#i7-clip2_4303_1230)"><path d="M13.8776 21.8242C29.1033 8.13791 49.7501 8.1861 62.955 18.9134C74.9816 28.6836 77.4697 44.3159 70.851 55.7801C64.2321 67.2443 52.5277 70.1455 39.5011 62.6247L31.7286 76.087L31.7234 76.0862C27.4181 83.5324 17.8937 86.0828 10.4437 81.7817C7.45394 80.0556 5.25322 77.4879 3.96665 74.551L3.96096 74.5511C-4.07832 55.7804 0.200745 34.1184 13.8776 21.8242Z" fill="url(#i7-paint0_radial_4303_1230)"/><path d="M13.8776 21.8242C29.1033 8.13791 49.7501 8.1861 62.955 18.9134C74.9816 28.6836 77.4697 44.3159 70.851 55.7801C64.2321 67.2443 52.5277 70.1455 39.5011 62.6247L31.7286 76.087L31.7234 76.0862C27.4181 83.5324 17.8937 86.0828 10.4437 81.7817C7.45394 80.0556 5.25322 77.4879 3.96665 74.551L3.96096 74.5511C-4.07832 55.7804 0.200745 34.1184 13.8776 21.8242Z" fill="url(#i7-paint1_radial_4303_1230)" fill-opacity="0.8"/><path d="M85.4327 14.2231C88.4528 15.9668 90.6686 18.569 91.9494 21.5433L91.9533 21.5444C99.9406 40.2943 95.6533 61.9068 81.9983 74.1814C66.7726 87.8677 46.1257 87.8196 32.9209 77.0923C20.8945 67.3221 18.4062 51.6897 25.0249 40.2256C31.6438 28.7614 43.3482 25.8601 56.3748 33.381L64.1434 19.9255L64.1482 19.9249C68.4516 12.4736 77.9805 9.92084 85.4327 14.2231Z" fill="url(#i7-paint2_radial_4303_1230)"/><path d="M85.4327 14.2231C88.4528 15.9668 90.6686 18.569 91.9494 21.5433L91.9533 21.5444C99.9406 40.2943 95.6533 61.9068 81.9983 74.1814C66.7726 87.8677 46.1257 87.8196 32.9209 77.0923C20.8945 67.3221 18.4062 51.6897 25.0249 40.2256C31.6438 28.7614 43.3482 25.8601 56.3748 33.381L64.1434 19.9255L64.1482 19.9249C68.4516 12.4736 77.9805 9.92084 85.4327 14.2231Z" fill="url(#i7-paint3_radial_4303_1230)" fill-opacity="0.9"/><path d="M39.5041 62.6261C52.5307 70.1469 64.2352 67.2456 70.8541 55.7814C77.2488 44.7055 75.1426 29.7389 64.147 19.9271L56.3791 33.3814L39.5041 62.6261Z" fill="url(#i7-paint4_radial_4303_1230)"/><path d="M56.3794 33.3815C43.3528 25.8607 31.6482 28.762 25.0294 40.2262C18.6347 51.3021 20.7409 66.2687 31.7364 76.0806L39.5043 62.6262L56.3794 33.3815Z" fill="url(#i7-paint5_radial_4303_1230)"/><path d="M33.3215 56.4453C37.9837 64.5204 48.3094 67.2872 56.3846 62.625C64.4598 57.9628 67.2266 47.6371 62.5643 39.5619C57.9021 31.4867 47.5764 28.72 39.5013 33.3822C31.4261 38.0444 28.6593 48.3701 33.3215 56.4453Z" fill="url(#i7-paint6_radial_4303_1230)"/></g></g></g><defs><radialGradient id="i7-paint0_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46.0001 49.4996) rotate(-148.717) scale(46.2195 47.5359)"><stop offset="0.465088" stop-color="#09442A"/><stop offset="0.70088" stop-color="#136C6C"/><stop offset="1" stop-color="#22918B"/></radialGradient><radialGradient id="i7-paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.0001 32.4996) rotate(123.57) scale(66.0095 46.5498)"><stop offset="0.718705" stop-color="#1A7F7C" stop-opacity="0"/><stop offset="1" stop-color="#16BBDA"/></radialGradient><radialGradient id="i7-paint2_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.4999 44.5001) rotate(30.75) scale(45.9618 44.5095)"><stop offset="0.358097" stop-color="#136C6C"/><stop offset="0.789474" stop-color="#42B870"/><stop offset="1" stop-color="#76D45E"/></radialGradient><radialGradient id="i7-paint3_radial_4303_1230" cx="0" cy="0" r="1" gradientTransform="matrix(42.5 -36.0002 31.1824 36.8127 49.4998 55.5001)" gradientUnits="userSpaceOnUse"><stop offset="0.583166" stop-color="#76D45E" stop-opacity="0"/><stop offset="1" stop-color="#C8F5B7"/></radialGradient><radialGradient id="i7-paint4_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.5 48) rotate(-58.9042) scale(32.6898)"><stop offset="0.486266" stop-color="#22918B"/><stop offset="0.729599" stop-color="#42B870"/><stop offset="1" stop-color="#43E5CA"/></radialGradient><radialGradient id="i7-paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.3833 49.0077) rotate(119.859) scale(31.1328 29.4032)"><stop offset="0.459553" stop-color="#08494E"/><stop offset="0.742242" stop-color="#1A7F7C"/><stop offset="1" stop-color="#309C61"/></radialGradient><radialGradient id="i7-paint6_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.5 40) rotate(120.784) scale(27.3542)"><stop stop-color="#C8F5B7"/><stop offset="0.24583" stop-color="#98F0B0"/><stop offset="0.643961" stop-color="#52D17C"/><stop offset="1" stop-color="#119FC5"/></radialGradient><clipPath id="i7-clip0_4303_1230"><rect width="96" height="96" fill="white"/></clipPath><clipPath id="i7-clip1_4303_1230"><rect width="96" height="96" fill="white"/></clipPath><clipPath id="i7-clip2_4303_1230"><rect width="95.9998" height="96" fill="white"/></clipPath></defs></svg>Dataverse</span>
+      </div>
+    </div>
+    <div class="slayer">
+      <div><span class="sk">Layer 03 · Deliberately open</span><b>AI &amp; agents</b>
+        <span class="sd">The layer that turns over fastest. We pick by result, not by margin.</span></div>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 96 96" aria-hidden="true"><path d="M64.3242 4.77449C52.3121 0.77044 46.3052 -1.23042 42.1523 1.76277C38.0001 4.75619 38 11.0874 38 23.7491V33.9991L28.3242 30.7745C16.3121 26.7705 10.3052 24.7696 6.15234 27.7628C1.99998 30.7562 2 37.0874 2 49.7491V67.585C2 74.5417 1.9996 78.0209 3.88672 80.6397C5.7743 83.2586 9.07559 84.3596 15.6758 86.5596L20.002 87.9991L20 88.0011L33.8906 92.63C41.0527 95.0173 44.634 96.2117 48.2168 95.6612C51.7998 95.1105 54.8577 92.8959 60.9727 88.4678L79.5957 74.9835C84.6242 71.3421 87.5709 69.2032 89.3691 66.7569C89.551 66.5194 89.7213 66.2697 89.8789 66.005C90.0501 65.7303 90.212 65.4518 90.3594 65.1632C91.9996 61.9502 92 58.1948 92 50.6846V28.4151C92 21.4583 92.0007 17.9792 90.1133 15.3604C88.2257 12.7416 84.9244 11.6425 78.3242 9.44246L64.3242 4.77449Z" fill="url(#i8-paint0_linear_4303_1230)"/><path d="M64.3242 4.77449C52.3121 0.77044 46.3052 -1.23042 42.1523 1.76277C38.0001 4.75619 38 11.0874 38 23.7491V33.9991L28.3242 30.7745C16.3121 26.7705 10.3052 24.7696 6.15234 27.7628C1.99998 30.7562 2 37.0874 2 49.7491V67.585C2 74.5417 1.9996 78.0209 3.88672 80.6397C5.7743 83.2586 9.07559 84.3596 15.6758 86.5596L20.002 87.9991L20 88.0011L33.8906 92.63C41.0527 95.0173 44.634 96.2117 48.2168 95.6612C51.7998 95.1105 54.8577 92.8959 60.9727 88.4678L79.5957 74.9835C84.6242 71.3421 87.5709 69.2032 89.3691 66.7569C89.551 66.5194 89.7213 66.2697 89.8789 66.005C90.0501 65.7303 90.212 65.4518 90.3594 65.1632C91.9996 61.9502 92 58.1948 92 50.6846V28.4151C92 21.4583 92.0007 17.9792 90.1133 15.3604C88.2257 12.7416 84.9244 11.6425 78.3242 9.44246L64.3242 4.77449Z" fill="url(#i8-paint1_radial_4303_1230)"/><path d="M64.3242 4.77449C52.3121 0.77044 46.3052 -1.23042 42.1523 1.76277C38.0001 4.75619 38 11.0874 38 23.7491V33.9991L28.3242 30.7745C16.3121 26.7705 10.3052 24.7696 6.15234 27.7628C1.99998 30.7562 2 37.0874 2 49.7491V67.585C2 74.5417 1.9996 78.0209 3.88672 80.6397C5.7743 83.2586 9.07559 84.3596 15.6758 86.5596L20.002 87.9991L20 88.0011L33.8906 92.63C41.0527 95.0173 44.634 96.2117 48.2168 95.6612C51.7998 95.1105 54.8577 92.8959 60.9727 88.4678L79.5957 74.9835C84.6242 71.3421 87.5709 69.2032 89.3691 66.7569C89.551 66.5194 89.7213 66.2697 89.8789 66.005C90.0501 65.7303 90.212 65.4518 90.3594 65.1632C91.9996 61.9502 92 58.1948 92 50.6846V28.4151C92 21.4583 92.0007 17.9792 90.1133 15.3604C88.2257 12.7416 84.9244 11.6425 78.3242 9.44246L64.3242 4.77449Z" fill="url(#i8-paint2_radial_4303_1230)"/><path d="M56 54.4151C56 47.4579 56 43.9793 54.1124 41.3604C52.2248 38.7415 48.9247 37.6415 42.3246 35.4414L28.3246 30.7748C16.312 26.7706 10.3058 24.7685 6.1529 27.7617C2 30.755 2 37.0861 2 49.7484V67.5847C2 74.5419 2 78.0206 3.88758 80.6394C5.77516 83.2583 9.07525 84.3583 15.6754 86.5584L29.6754 91.2251C41.688 95.2292 47.6942 97.2313 51.8471 94.2381C56 91.2448 56 84.9137 56 72.2514V54.4151Z" fill="url(#i8-paint3_radial_4303_1230)"/><path d="M56 54.4151C56 47.4579 56 43.9793 54.1124 41.3604C52.2248 38.7415 48.9247 37.6415 42.3246 35.4414L28.3246 30.7748C16.312 26.7706 10.3058 24.7685 6.1529 27.7617C2 30.755 2 37.0861 2 49.7484V67.5847C2 74.5419 2 78.0206 3.88758 80.6394C5.77516 83.2583 9.07525 84.3583 15.6754 86.5584L29.6754 91.2251C41.688 95.2292 47.6942 97.2313 51.8471 94.2381C56 91.2448 56 84.9137 56 72.2514V54.4151Z" fill="url(#i8-paint4_linear_4303_1230)"/><path d="M92 50.6846C92 58.1947 91.9996 61.9501 90.3594 65.1631C90.212 65.4517 90.0501 65.7302 89.8789 66.0049C89.7213 66.2696 89.551 66.5193 89.3691 66.7568C87.5709 69.2031 84.6242 71.3421 79.5957 74.9834L60.9727 88.4678C54.8577 92.8959 51.7998 95.1105 48.2168 95.6611C44.634 96.2116 41.0527 95.0172 33.8906 92.6299L25.2158 89.7393L20 88L20.002 87.999L16.7822 86.9277L15.2217 86.4072C8.92337 84.3067 5.73047 83.1977 3.88672 80.6396C1.99964 78.0208 2 74.5416 2 67.585V49.749C2 48.4323 2.00119 47.1841 2.00586 46.001L56 61.501L92 35.001V50.6846Z" fill="url(#i8-paint5_radial_4303_1230)"/><path d="M38.0742 15.1036C31.3033 13.0668 27.2217 12.5497 24.1523 14.7618C21.0793 16.9767 20.281 21.0195 20.0732 28.1026C22.4635 28.8216 25.1889 29.7306 28.3232 30.7754L37.999 34V23.7491C37.999 20.4569 38.0012 17.5925 38.0742 15.1036Z" fill="url(#i8-paint6_linear_4303_1230)"/><path d="M38.0742 15.1036C31.3033 13.0668 27.2217 12.5497 24.1523 14.7618C21.0793 16.9767 20.281 21.0195 20.0732 28.1026C22.4635 28.8216 25.1889 29.7306 28.3232 30.7754L37.999 34V23.7491C37.999 20.4569 38.0012 17.5925 38.0742 15.1036Z" fill="url(#i8-paint7_linear_4303_1230)" fill-opacity="0.7"/><path d="M38.0742 15.1035C38.0012 17.5922 38 20.4561 38 23.748V41.585C38 48.5419 38.0002 52.0208 39.8877 54.6396C41.7753 57.2583 45.0758 58.3586 51.6758 60.5586L56 62C64.0027 64.6676 68.0041 66.0014 70.84 64.1408C71.0112 64.0284 71.1774 63.9086 71.3381 63.7817C74 61.6798 74 57.462 74 49.0263V41.415C74 34.4579 73.9999 30.9792 72.1123 28.3604C70.2247 25.7416 66.9243 24.6414 60.3242 22.4414L46.3242 17.7744C43.1901 16.7297 40.4644 15.8225 38.0742 15.1035Z" fill="url(#i8-paint8_linear_4303_1230)"/><path d="M38.0742 15.1035C38.0012 17.5922 38 20.4561 38 23.748V41.585C38 48.5419 38.0002 52.0208 39.8877 54.6396C41.7753 57.2583 45.0758 58.3586 51.6758 60.5586L56 62C64.0027 64.6676 68.0041 66.0014 70.84 64.1408C71.0112 64.0284 71.1774 63.9086 71.3381 63.7817C74 61.6798 74 57.462 74 49.0263V41.415C74 34.4579 73.9999 30.9792 72.1123 28.3604C70.2247 25.7416 66.9243 24.6414 60.3242 22.4414L46.3242 17.7744C43.1901 16.7297 40.4644 15.8225 38.0742 15.1035Z" fill="url(#i8-paint9_radial_4303_1230)"/><path d="M20.0742 28.1035C20.0012 30.5922 20 33.4561 20 36.748V54.585C20 61.5421 20.0001 65.0208 21.8877 67.6396C23.7753 70.2584 27.0757 71.3586 33.6758 73.5586L37.975 74.9917C46.0014 77.6671 50.0146 79.0049 52.855 77.1309C53.0159 77.0247 53.1724 76.9119 53.324 76.7928C56 74.6909 56 70.4606 56 62V54.415C56 47.4579 55.9999 43.9792 54.1123 41.3604C52.2247 38.7416 48.9243 37.6414 42.3242 35.4414L28.3242 30.7744C25.1901 29.7297 22.4644 28.8225 20.0742 28.1035Z" fill="url(#i8-paint10_linear_4303_1230)"/><path d="M38 41.585C38 48.5422 38.0001 52.0208 39.8877 54.6397C41.7753 57.2585 45.0756 58.3585 51.6758 60.5586L56 62V54.415C56 47.4581 55.9998 43.9792 54.1123 41.3604C52.2247 38.7417 48.9242 37.6414 42.3242 35.4414L38 34V41.585Z" fill="url(#i8-paint11_linear_4303_1230)"/><defs><linearGradient id="i8-paint0_linear_4303_1230" x1="53.5" y1="77" x2="80.9999" y2="9.99998" gradientUnits="userSpaceOnUse"><stop stop-color="#2764E7"/><stop offset="0.307475" stop-color="#8B52F4"/><stop offset="0.544627" stop-color="#BB45EA"/><stop offset="0.803866" stop-color="#DB56C6"/><stop offset="1" stop-color="#F462AB"/></linearGradient><radialGradient id="i8-paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.5 45) rotate(43.8065) scale(33.9485 21.4653)"><stop offset="0.549399" stop-color="#5B2AB5"/><stop offset="1" stop-color="#A931D8" stop-opacity="0"/></radialGradient><radialGradient id="i8-paint2_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(44 34) rotate(17.7004) scale(49.3356 24.5964)"><stop offset="0.527929" stop-color="#9529C2"/><stop offset="1" stop-color="#DD3CE2" stop-opacity="0"/></radialGradient><radialGradient id="i8-paint3_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(61.3922 89.3373) rotate(-124.89) scale(82.0935 82.0935)"><stop stop-color="#2764E7"/><stop offset="0.225228" stop-color="#0094F0"/><stop offset="0.443437" stop-color="#19B2CE"/><stop offset="0.6999" stop-color="#52D17C"/><stop offset="1" stop-color="#FFD638"/></radialGradient><linearGradient id="i8-paint4_linear_4303_1230" x1="19.5444" y1="82.7096" x2="53.8452" y2="82.7096" gradientUnits="userSpaceOnUse"><stop stop-color="#16BBDA" stop-opacity="0"/><stop offset="0.535279" stop-color="#0094F0"/><stop offset="1" stop-color="#2764E7"/></linearGradient><radialGradient id="i8-paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientTransform="matrix(23 12.9998 8.90874 -13.0499 43 67.9995)" gradientUnits="userSpaceOnUse"><stop stop-color="#1B44B1"/><stop offset="1" stop-color="#367AF2" stop-opacity="0"/></radialGradient><linearGradient id="i8-paint6_linear_4303_1230" x1="33.5" y1="32.5" x2="34" y2="13" gradientUnits="userSpaceOnUse"><stop stop-color="#FF9C70"/><stop offset="1" stop-color="#FFD394"/></linearGradient><linearGradient id="i8-paint7_linear_4303_1230" x1="28.5" y1="24.5" x2="26.5" y2="33" gradientUnits="userSpaceOnUse"><stop stop-color="#FFB357" stop-opacity="0"/><stop offset="1" stop-color="#F24A9D"/></linearGradient><linearGradient id="i8-paint8_linear_4303_1230" x1="58" y1="20" x2="58.5" y2="64.5" gradientUnits="userSpaceOnUse"><stop stop-color="#FFB357"/><stop offset="0.380259" stop-color="#FB6F7B"/><stop offset="0.659779" stop-color="#F24A9D"/><stop offset="1" stop-color="#DD3CE2"/></linearGradient><radialGradient id="i8-paint9_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40 54) rotate(12.702) scale(24.0895 24.0895)"><stop offset="0.567938" stop-color="#D7257D"/><stop offset="1" stop-color="#F462AB" stop-opacity="0"/></radialGradient><linearGradient id="i8-paint10_linear_4303_1230" x1="50.03" y1="77.3707" x2="20" y2="25.6869" gradientUnits="userSpaceOnUse"><stop stop-color="#0FAFFF"/><stop offset="0.54828" stop-color="#2BDABE"/><stop offset="0.765945" stop-color="#88E06C"/><stop offset="1" stop-color="#FFD638"/></linearGradient><linearGradient id="i8-paint11_linear_4303_1230" x1="36" y1="44.5" x2="53" y2="50.5" gradientUnits="userSpaceOnUse"><stop stop-color="#76EB95"/><stop offset="1" stop-color="#3BD5FF" stop-opacity="0"/></linearGradient></defs></svg>Copilot Studio</span>
+        <span class="chip"><svg viewBox="0 0 18 18" aria-hidden="true"><g clip-path="url(#i9-clip0_1152_37092)"><path d="M11.9575 11.6833C11.995 11.6833 12.0324 11.5835 12.0324 11.4447V7.57722C12.0324 6.72418 12.6923 5.81772 13.6174 5.5429C13.5597 5.3552 12.9725 3.4312 12.8062 2.89704C12.6315 2.33541 12.1323 1 11.5207 1C11.5161 1 11.5115 1.00037 11.5067 1.00112C11.5065 1.00112 11.5064 1.00112 11.5061 1.00112C11.4603 1.00899 11.4155 1.05379 11.3716 1.12967C11.0522 1.71314 10.9092 4.14534 10.9092 5.96711V8.2302C11.184 9.20069 11.8214 11.4467 11.8702 11.5833C11.8702 11.5833 11.9201 11.6832 11.9575 11.6832V11.6833Z" fill="url(#i9-paint0_linear_1152_37092)"/><path d="M11.9575 11.6833C11.995 11.6833 12.0324 11.5835 12.0324 11.4447V7.57722C12.0324 6.72418 12.6923 5.81772 13.6174 5.5429C13.5597 5.3552 12.9725 3.4312 12.8062 2.89704C12.6315 2.33541 12.1323 1 11.5207 1C11.5161 1 11.5115 1.00037 11.5067 1.00112C11.5065 1.00112 11.5064 1.00112 11.5061 1.00112C11.4603 1.00899 11.4155 1.05379 11.3716 1.12967C11.0522 1.71314 10.9092 4.14534 10.9092 5.96711V8.2302C11.184 9.20069 11.8214 11.4467 11.8702 11.5833C11.8702 11.5833 11.9201 11.6832 11.9575 11.6832V11.6833Z" fill="url(#i9-paint1_linear_1152_37092)"/><path d="M16.0146 5.45557H14.2081C12.9943 5.45557 12.0333 6.54137 12.0333 7.56477V11.4322C12.0333 11.571 11.9959 11.6709 11.9585 11.6709C11.921 11.6709 11.8711 11.571 11.8711 11.571C11.8711 11.571 11.946 11.7832 12.0458 11.7832H14.0255C14.6418 11.7832 16.5014 11.1716 16.5014 9.26212V6.00733C16.5014 5.59285 16.2642 5.45557 16.0146 5.45557Z" fill="url(#i9-paint2_linear_1152_37092)"/><path d="M2.33617 17H7.71527C10.0616 17 10.9103 14.9657 10.9103 13.1934V5.96724C10.9103 3.883 11.0975 1 11.5218 1H8.29573C7.52806 1 6.86659 1.82371 6.11776 3.48362C5.36893 5.14353 1.76094 15.3562 1.59982 15.8393C1.33773 16.6256 1.57486 17 2.33617 17Z" fill="url(#i9-paint3_linear_1152_37092)"/></g><defs><linearGradient id="i9-paint0_linear_1152_37092" x1="10.9092" y1="6.34165" x2="13.6174" y2="6.34165" gradientUnits="userSpaceOnUse"><stop stop-color="#302EC9"/><stop offset="0.12" stop-color="#151698"/><stop offset="0.25" stop-color="#0A0B7E"/><stop offset="0.43" stop-color="#090C7F"/><stop offset="0.51" stop-color="#141698"/><stop offset="0.61" stop-color="#282AC4"/><stop offset="0.77" stop-color="#8E8FF4"/><stop offset="0.85" stop-color="#A7A6F7"/><stop offset="0.91" stop-color="#CACAFB"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="i9-paint1_linear_1152_37092" x1="12.2633" y1="11.6833" x2="12.2633" y2="1.76555" gradientUnits="userSpaceOnUse"><stop offset="0.02" stop-color="#201BA6"/><stop offset="0.64" stop-color="#2D29C7"/><stop offset="1" stop-color="#201BA6"/></linearGradient><linearGradient id="i9-paint2_linear_1152_37092" x1="14.1862" y1="11.73" x2="14.1862" y2="5.52558" gradientUnits="userSpaceOnUse"><stop stop-color="#3530C3"/><stop offset="0.5" stop-color="#6D71D1"/><stop offset="0.966555" stop-color="#C0BFF5"/><stop offset="1" stop-color="#E3E4FF"/></linearGradient><linearGradient id="i9-paint3_linear_1152_37092" x1="5.64213" y1="16.9843" x2="5.64213" y2="0.830183" gradientUnits="userSpaceOnUse"><stop stop-color="#302EC9"/><stop offset="0.445601" stop-color="#302EC9"/><stop offset="0.949145" stop-color="#CACAFB"/><stop offset="1" stop-color="#7F7EAF"/></linearGradient><clipPath id="i9-clip0_1152_37092"><rect width="15.0044" height="16" fill="white" transform="translate(1.49707 1)"/></clipPath></defs></svg>Azure AI Foundry</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="#D97757" aria-hidden="true"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg>Claude · Anthropic</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="#10A37F" aria-hidden="true"><path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z"/></svg>OpenAI</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="#FFD21E" aria-hidden="true"><path d="M16.781 3.277c2.997 1.704 4.844 4.851 4.844 8.258 0 .995-.155 1.955-.443 2.857a1.332 1.332 0 011.125.4 1.41 1.41 0 01.2 1.723c.204.165.352.385.428.632l.017.062c.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.255.57-.893 1.018-2.128 1.5l-.202.078-.131.048c-.478.173-.89.295-1.061.345l-.086.024c-.89.243-1.808.375-2.732.394-1.32 0-2.3-.36-2.923-1.067a9.852 9.852 0 01-3.18.018C9.778 21.647 8.802 22 7.494 22a11.249 11.249 0 01-2.541-.343l-.221-.06-.273-.08a16.574 16.574 0 01-1.175-.405c-1.237-.483-1.875-.93-2.13-1.501-.186-.4-.151-.867.093-1.236a1.42 1.42 0 01-.2-1.166c.069-.273.226-.516.447-.694a1.41 1.41 0 01.2-1.722c.233-.248.557-.391.917-.407l.078-.001a9.385 9.385 0 01-.44-2.85c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0zM4.188 14.758c.125.687 2.357 2.35 2.14 2.707-.19.315-.796-.239-.948-.386l-.041-.04-.168-.147c-.561-.479-2.304-1.9-2.74-1.432-.43.46.119.859 1.055 1.42l.784.467.136.083c1.045.643 1.12.84.95 1.113-.188.295-3.07-2.1-3.34-1.083-.27 1.011 2.942 1.304 2.744 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725l.16.04.175.042c1.227.284 3.565.65 4.435-.604.673-.973.64-1.709-.248-2.61l-.057-.057c-.945-.928-1.495-2.288-1.495-2.288l-.017-.058-.025-.072c-.082-.22-.284-.639-.63-.584-.46.073-.798 1.21.12 1.933l.05.038c.977.721-.195 1.21-.573.534l-.058-.104-.143-.25c-.463-.799-1.282-2.111-1.739-2.397-.532-.332-.907-.148-.782.541zm14.842-.541c-.533.335-1.563 2.074-1.94 2.751a.613.613 0 01-.687.302.436.436 0 01-.176-.098.303.303 0 01-.049-.06l-.014-.028-.008-.02-.007-.019-.003-.013-.003-.017a.289.289 0 01-.004-.048c0-.12.071-.266.25-.427.026-.024.054-.047.084-.07l.047-.036c.022-.016.043-.032.063-.049.883-.71.573-1.81.131-1.917l-.031-.006-.056-.004a.368.368 0 00-.062.006l-.028.005-.042.014-.039.017-.028.015-.028.019-.036.027-.023.02c-.173.158-.273.428-.31.542l-.016.054s-.53 1.309-1.439 2.234l-.054.054c-.365.358-.596.69-.702 1.018-.143.437-.066.868.21 1.353.055.097.117.195.187.296.882 1.275 3.282.876 4.494.59l.286-.07.25-.074c.276-.084.736-.233 1.2-.42l.188-.077.065-.028.064-.028.124-.056.081-.038c.529-.252.964-.543.994-.827l.001-.036a.299.299 0 00-.037-.139c-.094-.176-.271-.212-.491-.168l-.045.01c-.044.01-.09.024-.136.04l-.097.035-.054.022c-.559.23-1.238.705-1.607.745h.006a.452.452 0 01-.05.003h-.024l-.024-.003-.023-.005c-.068-.016-.116-.06-.14-.142a.22.22 0 01-.005-.1c.062-.345.958-.595 1.713-.91l.066-.028c.528-.224.97-.483.985-.832v-.04a.47.47 0 00-.016-.098c-.048-.18-.175-.251-.36-.251-.785 0-2.55 1.36-2.92 1.36-.025 0-.048-.007-.058-.024a.6.6 0 01-.046-.088c-.1-.238.068-.462 1.06-1.066l.209-.126c.538-.32 1.01-.588 1.341-.831.29-.212.475-.406.503-.6l.003-.028c.008-.113-.038-.227-.147-.344a.266.266 0 00-.07-.054l-.034-.015-.013-.005a.403.403 0 00-.13-.02c-.162 0-.369.07-.595.18-.637.313-1.431.952-1.826 1.285l-.249.215-.033.033c-.08.078-.288.27-.493.386l-.071.037-.041.019a.535.535 0 01-.122.036h.005a.346.346 0 01-.031.003l.01-.001-.013.001c-.079.005-.145-.021-.19-.095a.113.113 0 01-.014-.065c.027-.465 2.034-1.991 2.152-2.642l.009-.048c.1-.65-.271-.817-.791-.493zM11.938 2.984c-4.798 0-8.688 3.829-8.688 8.55 0 .692.083 1.364.24 2.008l.008-.009c.252-.298.612-.46 1.017-.46.355.008.699.117.993.312.22.14.465.384.715.694.261-.372.69-.598 1.15-.605.852 0 1.367.728 1.562 1.383l.047.105.06.127c.192.396.595 1.139 1.143 1.68 1.06 1.04 1.324 2.115.8 3.266a8.865 8.865 0 002.024-.014c-.505-1.12-.26-2.17.74-3.186l.066-.066c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694a1.87 1.87 0 01.99-.312c.357 0 .682.126.925.36.14-.61.215-1.245.215-1.898 0-4.722-3.89-8.55-8.687-8.55zm1.857 8.926l.439-.212c.553-.264.89-.383.89.152 0 1.093-.771 3.208-3.155 3.262h-.184c-2.325-.052-3.116-2.06-3.156-3.175l-.001-.087c0-1.107 1.452.586 3.25.586.716 0 1.379-.272 1.917-.526zm4.017-3.143c.45 0 .813.358.813.8 0 .441-.364.8-.813.8a.806.806 0 01-.812-.8c0-.442.364-.8.812-.8zm-11.624 0c.448 0 .812.358.812.8 0 .441-.364.8-.812.8a.806.806 0 01-.813-.8c0-.442.364-.8.813-.8zm7.79-.841c.32-.384.846-.54 1.33-.394.483.146.83.564.878 1.06.048.495-.212.97-.659 1.203-.322.168-.447-.477-.767-.585l.002-.003c-.287-.098-.772.362-.925.079a1.215 1.215 0 01.14-1.36zm-4.323 0c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003c-.108.036-.194.134-.273.24l-.118.165c-.11.15-.22.262-.377.18a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394z"/></svg>Open-source models</span>
+      </div>
+    </div>
   </div>
-  <p class="footnote" style="margin-top:14px">1-207-387-0396 · part of Deer Brook Consulting — see
-    also Higher Education, Cyber &amp; Advisory, and Technical.</p>
+  <p class="sla">Reading the diagram: the two committed layers are where switching costs are real,
+    so we make the call once and stand behind it. <b>The open layer is where we refuse to be a
+    reseller</b> — no model, no vendor, no agent framework earns a place in your stack because of
+    our margin on it.</p>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="alt"><div class="wrap">
+  <span class="eyebrow">The promises, in writing</span>
+  <h2 class="serif">Three things we put in every agreement.</h2>
+  <div class="clauses">
+    <div class="clause"><span class="cnum">On price</span>
+      <div><h3 class="serif">Fixed-price phases</h3>
+        <p>Every phase priced before it starts. Scope drift is our risk to manage, not your invoice
+          surprise. (T&amp;M available when you prefer it — your choice.)</p></div></div>
+    <div class="clause"><span class="cnum">On people</span>
+      <div><h3 class="serif">Senior consultants and FDEs</h3>
+        <p>The people in your kickoff are the people at your go-live — named in the statement of work.
+          We don't sell partners and staff juniors.</p></div></div>
+    <div class="clause"><span class="cnum">On handover</span>
+      <div><h3 class="serif">No black boxes</h3>
+        <p>Documentation, training, and admin access are deliverables. You could leave us and keep
+          everything working — that's the point.</p></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="eyebrow">Offices</span>
+  <h2 class="serif">Two offices. Fifty states.</h2>
+  <p class="lede">Desks in Maine and South Carolina. Everyone else works where they live — and we're
+    on site when the trip earns itself.</p>
+  <div class="officegrid">
+  <div class="mapcard">
+    <svg class="usmap" viewBox="0 0 975 610" role="img" aria-label="Map of the United States marking our two offices: New Gloucester, Maine and North Charleston, South Carolina"><path class="land" d="M66 24 67 23 68 21 67 19 69 19 70 21 72 23 73 24 75 25 77 27 80 28 82 29 83 30 85 30 87 31 89 31 90 32 91 33 92 34 92 36 93 35 92 34 93 33 95 33 94 34 95 36 95 38 94 39 93 40 92 42 92 40 90 42 88 43 85 46 84 48 86 49 88 49 85 48 88 44 90 43 92 43 94 41 96 40 96 38 97 39 96 43 95 42 96 44 95 45 94 46 95 48 93 50 92 51 91 54 90 52 91 50 90 51 89 52 91 54 90 55 88 54 88 52 89 51 88 53 87 54 88 55 89 56 90 55 92 53 93 52 94 53 95 52 96 51 96 49 96 47 97 46 98 43 99 41 100 39 102 38 101 37 100 35 101 34 100 32 99 33 100 36 99 34 98 33 99 32 100 31 101 30 100 29 99 28 100 27 98 28 98 26 99 25 100 26 101 27 101 25 102 24 102 22 102 20 100 21 100 19 99 17 100 16 99 15 100 14 110 17 115 19 122 21 130 23 140 25 148 28 157 30 166 32 184 36 193 38 210 42 223 44 233 46 243 48 262 51 273 53 285 55 303 57 310 58 326 60 338 62 346 63 362 64 368 65 377 66 387 67 404 68 416 68 421 69 431 69 440 70 447 70 455 70 469 71 484 71 498 71 511 71 511 62 512 63 514 62 515 63 516 64 516 68 518 73 518 75 519 76 520 77 521 78 522 77 524 77 525 78 528 78 531 79 531 81 534 81 537 80 538 79 540 78 541 79 544 79 548 80 549 81 548 82 549 83 551 82 552 83 552 85 553 87 555 87 554 85 555 84 558 84 559 85 560 87 563 87 564 89 565 90 566 89 566 91 567 90 568 91 569 90 571 90 573 87 575 86 577 86 578 87 577 88 578 89 581 88 583 88 584 89 585 88 588 88 590 90 592 91 593 90 596 90 598 90 596 91 593 93 591 93 590 94 588 95 585 96 584 97 582 98 579 99 577 101 573 105 572 106 570 110 568 111 567 112 565 114 563 116 559 119 560 121 561 122 563 121 566 120 568 120 571 118 572 117 574 117 575 116 576 115 578 115 580 116 579 118 578 119 578 121 577 123 580 122 580 120 583 122 584 123 586 122 589 121 591 120 593 119 594 117 597 116 599 116 603 114 605 112 607 112 608 111 609 108 612 106 614 105 615 104 616 102 619 101 622 100 624 100 626 100 625 101 624 102 622 102 623 103 621 104 619 106 618 108 617 109 617 111 616 112 615 115 615 117 617 115 619 112 618 115 620 113 621 112 622 113 624 112 625 113 627 114 629 115 630 117 631 118 632 119 633 120 635 121 637 121 638 120 640 121 641 122 642 121 644 121 643 119 645 119 644 120 645 121 647 119 649 118 652 115 656 114 658 114 660 114 662 114 665 112 667 112 668 111 670 111 669 113 669 115 669 117 670 118 671 117 672 118 675 117 676 118 678 118 679 116 681 116 682 115 684 115 683 117 684 120 683 122 684 123 686 124 687 126 689 126 691 126 689 124 692 123 693 124 694 125 695 126 694 128 692 127 691 128 689 127 687 127 685 127 682 128 681 129 679 128 678 127 676 127 676 129 676 131 674 131 673 130 672 129 671 128 669 128 666 127 664 127 662 129 661 130 660 131 659 130 657 131 654 131 651 132 651 134 650 135 649 136 648 137 647 138 646 139 647 140 646 139 646 137 647 136 648 134 647 133 646 135 644 135 643 137 641 138 640 136 639 138 638 140 637 142 636 145 635 147 634 149 632 152 632 154 632 156 630 156 629 157 628 159 627 161 627 164 626 166 628 166 630 164 631 162 633 159 634 158 635 157 636 158 636 155 638 153 638 151 640 150 640 148 642 148 641 150 641 152 640 153 639 155 639 157 638 158 637 159 637 161 636 163 635 165 635 170 635 172 635 174 633 176 633 178 632 181 633 182 633 185 632 188 632 190 631 193 631 196 631 198 632 199 632 201 633 203 633 205 634 206 634 210 634 212 634 215 634 217 635 219 636 221 637 222 638 225 639 227 640 229 641 230 642 231 644 231 646 231 650 229 652 228 654 226 655 224 657 219 659 216 659 213 660 211 660 208 660 206 660 202 659 198 658 196 656 191 655 190 654 187 652 185 653 182 654 181 654 179 653 177 652 175 653 173 654 170 655 168 655 166 655 163 655 161 656 159 657 157 657 155 659 153 660 154 662 153 662 151 663 149 664 148 665 147 664 149 665 151 664 153 664 156 665 157 666 154 666 152 666 155 665 156 666 158 666 156 668 153 668 151 668 149 667 147 668 144 670 143 672 143 674 142 672 141 671 140 670 138 671 137 672 136 673 135 672 134 675 134 679 134 681 135 683 135 685 135 686 137 687 138 689 138 692 139 695 140 697 140 698 141 699 142 699 144 700 145 701 147 699 146 698 147 699 149 700 150 701 151 702 153 702 155 702 157 702 160 702 162 701 164 699 165 699 167 699 169 698 170 695 171 694 174 694 176 695 179 697 179 698 180 700 180 701 177 702 175 702 173 703 174 704 173 702 172 704 172 705 171 706 170 708 169 710 168 712 168 713 169 714 171 715 172 716 174 717 178 718 181 719 186 720 189 721 191 721 195 721 198 721 200 720 201 719 202 718 201 719 199 718 198 717 199 716 200 717 201 715 203 716 204 715 206 713 208 712 210 713 212 712 214 711 216 710 217 709 218 708 220 709 221 708 222 710 223 713 223 714 224 716 225 718 225 719 224 720 225 721 224 723 227 726 227 728 226 730 225 733 223 735 224 736 223 738 223 739 222 741 220 742 218 744 216 748 213 750 212 752 212 755 210 759 207 761 205 762 204 763 203 765 202 768 200 769 199 772 196 773 194 775 193 776 192 777 191 778 189 779 187 780 186 779 184 778 182 777 180 776 179 775 176 776 175 778 174 782 173 784 172 786 171 788 171 790 171 795 170 797 170 798 171 799 172 802 171 804 170 806 169 808 169 810 169 811 168 812 167 814 165 815 163 816 162 818 162 819 161 820 160 819 158 818 155 817 154 818 153 819 152 818 151 817 152 816 150 814 149 815 146 817 145 818 143 819 142 821 141 822 140 822 138 824 135 825 132 828 129 831 126 832 124 834 123 836 123 842 122 845 121 851 120 852 119 862 117 868 115 870 115 874 114 877 113 886 111 886 109 887 108 886 107 887 106 886 105 887 104 888 103 889 104 891 104 892 102 894 102 895 103 895 101 894 99 895 98 896 99 897 98 895 97 896 94 897 92 898 91 899 90 898 89 899 87 900 86 899 85 898 84 899 83 899 81 898 80 898 77 899 75 900 74 899 67 906 48 907 47 908 48 909 49 910 51 912 52 914 51 915 50 917 49 918 48 919 47 920 46 923 46 925 47 928 49 930 50 933 60 937 73 938 74 937 75 938 76 939 80 940 79 941 80 942 81 944 80 945 81 946 82 945 83 947 85 946 86 948 89 949 90 950 89 951 88 953 89 954 90 955 92 956 93 957 95 956 96 955 99 954 100 953 101 953 99 951 100 952 101 951 103 950 104 950 106 949 105 948 104 947 105 946 106 946 108 944 109 943 110 941 110 942 111 941 113 940 114 937 112 938 111 939 110 937 111 936 112 937 114 936 117 937 118 937 120 936 119 935 117 934 116 935 115 933 114 931 112 932 111 931 110 930 112 929 113 930 114 929 115 929 117 929 120 930 121 931 122 930 123 928 125 927 127 927 125 926 126 926 124 925 125 924 127 923 129 922 128 922 130 921 129 921 131 920 132 919 131 917 132 916 133 915 134 915 136 915 138 914 137 913 138 913 140 913 142 912 143 911 144 911 146 911 148 911 150 910 153 909 154 910 155 911 159 913 159 914 158 914 160 913 161 911 162 912 163 911 164 910 165 909 166 910 167 910 169 911 168 912 167 913 168 915 169 917 171 917 173 918 174 920 176 921 178 923 178 925 178 926 177 927 176 929 175 929 173 928 172 927 173 927 171 926 170 925 171 924 170 926 169 927 170 929 172 930 174 931 177 931 179 930 180 931 178 929 178 926 180 924 180 923 181 921 183 919 185 918 186 917 187 916 188 918 186 919 185 920 183 919 180 920 179 918 179 918 181 917 182 915 183 916 185 914 186 913 187 912 188 911 186 911 184 911 187 910 188 909 187 910 185 911 183 910 182 909 184 907 182 908 184 906 184 908 186 908 188 908 191 905 192 904 193 902 194 900 193 899 194 897 195 896 196 893 197 891 198 889 198 887 198 885 200 885 198 884 199 884 201 882 203 881 202 880 204 878 205 876 206 875 208 874 209 873 210 873 212 874 211 875 210 876 209 877 208 879 209 878 208 880 208 882 208 883 207 884 206 889 205 891 204 893 202 894 201 895 200 896 199 895 200 896 201 898 201 900 202 902 200 903 199 900 202 896 206 893 208 889 211 886 213 883 214 882 215 878 217 874 218 872 219 870 219 870 216 869 217 870 218 869 219 868 220 866 222 868 223 869 222 871 222 872 223 872 225 872 229 873 234 873 237 872 242 871 244 871 246 870 247 868 249 867 251 866 254 865 257 864 259 863 257 863 255 862 253 860 254 859 253 858 254 856 253 855 252 854 251 852 250 850 250 850 247 849 246 850 245 849 244 848 246 849 247 850 248 849 249 850 250 851 251 853 252 854 254 855 258 856 259 857 261 860 263 862 263 862 266 864 269 864 271 864 273 863 274 863 278 863 280 862 282 861 284 860 285 859 287 858 288 858 291 859 292 858 295 857 297 857 299 856 302 855 304 854 303 853 302 852 299 853 298 853 296 853 294 853 291 854 289 855 287 856 286 854 285 856 284 855 283 853 284 852 285 851 284 852 283 853 282 851 282 852 280 850 281 851 279 850 278 850 275 849 276 849 278 848 277 847 279 845 279 844 278 843 277 841 274 843 274 842 273 841 272 842 271 844 270 845 271 846 272 845 270 843 270 842 268 841 269 840 270 840 268 841 266 842 267 842 264 840 265 839 266 839 264 839 262 840 263 842 262 841 261 842 260 841 261 840 262 840 259 840 256 841 254 843 253 843 251 843 249 841 250 840 251 842 252 839 254 838 252 838 254 839 255 838 254 838 256 837 257 836 259 835 258 834 259 837 260 837 262 838 263 837 264 837 266 836 269 837 270 838 272 838 274 839 275 840 276 841 277 840 278 841 279 842 280 843 282 844 284 842 283 841 282 840 283 839 282 838 281 835 282 834 279 833 280 834 281 832 281 831 280 830 278 829 279 827 280 825 278 826 276 827 274 825 274 825 278 825 280 826 281 828 280 830 279 830 281 832 282 834 283 836 283 838 283 839 284 840 285 842 286 844 286 846 287 846 289 845 291 846 292 845 293 843 293 842 294 840 291 839 290 836 289 835 288 834 287 836 289 838 291 839 292 841 294 842 295 844 294 846 295 847 296 848 299 845 299 846 300 847 302 844 303 846 303 847 304 849 305 849 307 848 308 847 309 846 307 844 307 843 306 842 304 840 304 838 304 837 305 839 305 840 306 841 304 842 307 843 308 846 309 848 310 849 308 851 309 853 309 854 308 856 310 857 313 859 315 859 317 861 321 863 324 865 327 868 332 866 329 865 328 863 324 861 322 860 321 860 319 859 318 857 318 856 317 857 319 859 320 860 323 861 324 862 325 860 324 859 323 860 325 858 325 855 323 856 324 857 325 855 327 854 326 855 327 853 327 851 327 850 326 852 327 853 328 851 329 850 331 848 330 846 328 845 327 846 325 845 327 846 330 847 331 847 333 850 332 852 331 854 331 856 330 858 329 859 330 859 332 860 336 860 334 860 331 861 330 860 329 863 329 864 331 865 332 866 335 865 337 864 338 863 339 862 340 862 342 861 343 860 344 858 344 856 345 854 345 852 344 851 342 853 341 851 341 850 342 851 343 852 345 849 344 848 345 847 344 845 344 843 343 844 345 846 345 850 346 853 346 854 347 853 349 854 350 853 351 852 352 850 355 846 353 846 355 848 355 850 356 852 354 855 353 855 351 856 352 857 353 859 352 859 354 858 355 857 356 856 359 855 360 854 359 853 360 856 361 857 358 859 355 860 354 862 350 861 352 860 354 859 356 858 357 857 359 856 362 853 361 851 361 847 363 845 364 844 365 842 366 840 368 838 370 836 373 834 377 834 379 834 381 833 383 832 384 831 383 829 383 827 384 825 384 822 386 820 388 818 389 816 392 815 394 814 396 814 398 813 402 814 403 813 404 811 406 811 408 809 408 807 409 806 410 807 411 805 412 805 414 803 415 801 415 803 416 802 417 801 418 800 419 798 420 797 421 795 423 793 423 792 424 793 425 793 427 791 428 790 429 788 428 790 430 789 431 787 433 786 434 787 435 786 437 785 438 783 439 784 440 783 442 781 442 782 443 783 445 781 447 781 450 781 452 781 454 780 456 780 458 779 459 778 460 779 461 780 460 780 465 781 468 781 470 782 471 782 473 783 475 785 482 787 485 790 491 793 496 795 500 801 508 805 511 806 514 805 515 805 518 806 520 807 522 808 524 812 529 813 532 814 534 815 537 817 540 818 541 819 542 820 544 822 549 823 554 823 557 823 561 823 567 824 571 824 574 823 573 822 574 821 576 821 578 821 580 822 581 821 582 821 584 822 583 824 579 822 585 822 587 820 589 818 592 816 593 818 590 819 589 820 588 819 587 820 586 818 586 815 587 814 588 812 587 811 588 809 589 807 590 805 589 805 586 805 584 804 582 803 581 802 580 801 579 800 578 798 576 796 576 795 575 793 574 792 575 790 573 789 571 788 567 787 565 786 564 784 562 783 561 782 562 781 563 781 561 780 559 779 558 781 559 781 555 780 554 781 553 780 552 779 553 780 556 778 557 777 558 777 556 775 554 773 551 772 549 770 547 768 544 766 543 765 541 766 542 767 541 768 540 769 537 770 536 771 535 771 533 769 532 770 534 768 533 768 531 765 530 764 532 766 532 767 534 767 536 765 537 766 539 765 537 763 535 762 534 762 530 761 529 761 526 762 528 763 529 762 527 763 526 763 524 763 522 764 521 763 519 764 517 763 516 762 514 761 512 762 510 760 508 759 507 759 505 755 505 754 506 753 504 752 503 751 502 750 501 749 500 748 499 746 498 746 496 745 495 744 494 742 493 741 492 740 491 739 490 737 489 734 488 732 487 730 488 727 487 726 490 727 492 725 492 723 492 721 494 716 497 714 498 712 498 713 499 714 500 716 499 718 498 720 496 719 498 717 499 714 500 712 500 710 499 707 500 706 498 706 496 707 499 708 498 708 496 707 494 705 493 703 493 702 491 700 491 698 490 695 488 691 487 687 486 685 486 681 486 678 486 675 487 671 488 669 489 666 490 663 490 661 491 658 492 654 492 656 491 659 491 658 489 656 488 655 486 656 485 655 483 653 482 652 483 652 485 652 489 651 490 649 489 647 489 646 490 645 491 644 490 643 491 642 490 640 491 638 490 635 490 633 491 631 492 629 492 628 491 627 494 626 495 623 496 622 497 621 498 619 499 619 501 621 501 622 502 623 503 624 502 624 500 626 499 627 498 627 500 628 501 630 499 631 500 630 501 629 502 631 502 628 503 629 504 630 505 629 504 627 505 627 507 626 506 625 507 626 508 625 507 624 508 622 508 623 509 623 511 625 511 626 512 627 513 629 513 630 514 632 515 634 516 635 517 637 517 635 518 634 521 632 520 630 523 629 524 629 522 630 521 631 520 631 518 630 517 630 519 628 519 627 517 625 517 624 516 620 515 619 516 616 519 613 521 612 520 611 519 611 517 609 517 608 515 607 517 605 516 606 518 604 519 603 521 601 521 601 523 600 522 599 521 598 520 595 520 594 519 592 519 590 517 592 516 593 517 594 518 594 516 593 515 592 514 591 515 590 514 588 514 587 512 586 510 584 510 584 508 582 508 580 509 579 508 580 507 579 506 577 506 575 507 574 508 573 509 575 509 574 510 575 511 577 511 576 512 574 512 572 513 565 512 562 511 558 509 554 508 551 508 548 508 544 509 542 509 541 510 537 511 535 511 526 516 524 517 523 518 524 516 526 515 528 514 527 513 523 514 523 512 524 511 524 509 521 509 520 511 518 511 517 512 518 513 517 514 518 515 520 515 519 516 520 517 520 519 519 520 517 521 516 523 515 522 515 524 518 522 520 520 521 519 523 519 522 520 517 523 516 524 515 525 513 527 510 530 504 533 502 534 498 536 494 538 491 540 490 541 489 542 485 544 484 545 480 548 478 551 477 553 476 554 474 558 472 562 471 564 470 568 470 570 470 572 471 576 472 580 472 583 473 587 474 592 473 588 473 585 472 582 470 582 471 581 471 579 470 578 470 576 469 574 470 571 470 569 470 564 472 560 473 557 474 556 475 554 476 551 478 550 480 547 482 546 483 545 486 543 487 542 489 541 490 540 488 540 486 541 484 542 484 540 482 540 482 542 482 544 480 545 479 546 477 546 475 546 474 547 475 548 477 547 477 549 474 553 473 552 471 552 469 552 467 552 468 553 470 553 470 555 473 556 471 559 470 562 469 564 468 565 468 563 467 564 465 565 467 566 469 566 469 568 469 572 468 576 469 580 469 582 470 583 471 587 472 588 471 589 471 591 472 592 473 593 474 595 472 595 470 596 470 598 468 597 466 595 464 593 462 593 460 593 459 592 458 593 457 592 456 593 455 592 453 592 451 591 450 590 447 589 445 588 443 587 442 586 441 585 439 585 437 584 435 584 434 583 435 582 434 581 433 579 433 577 432 576 431 574 430 573 429 572 429 570 428 569 428 567 428 565 427 564 426 563 427 561 428 559 427 558 426 557 425 556 424 555 423 556 422 554 421 553 420 552 419 551 420 550 419 549 418 548 417 546 416 544 414 543 413 542 412 541 411 538 411 536 410 535 409 533 408 532 408 530 407 528 406 526 406 524 405 522 404 521 403 520 401 518 400 516 398 514 396 513 394 512 395 511 395 509 394 511 393 510 392 508 391 506 389 506 386 506 384 505 381 505 379 505 377 504 376 503 374 502 373 503 372 505 370 504 369 505 367 505 366 506 365 507 365 509 364 510 363 512 363 514 362 515 361 516 362 517 360 517 359 519 357 520 357 522 355 521 353 521 351 520 349 517 347 517 345 516 344 514 340 513 338 511 336 509 335 508 333 507 332 506 331 505 330 504 330 501 329 500 328 498 327 495 328 494 328 492 327 490 326 488 325 487 325 483 324 482 323 480 321 478 319 477 318 476 316 475 313 472 312 470 310 468 309 467 308 465 306 464 305 462 302 460 301 458 300 456 299 454 298 453 296 452 287 451 271 449 264 448 263 458 247 456 242 456 229 454 220 452 208 450 185 437 172 429 165 426 142 412 143 411 143 409 145 407 117 404 100 402 100 400 99 398 98 397 98 395 99 394 99 390 99 388 98 387 97 382 95 381 94 379 92 376 91 375 90 374 89 373 88 371 87 370 86 371 84 370 82 369 83 368 83 365 82 363 81 362 79 362 78 361 76 362 74 360 72 358 70 357 69 354 68 352 67 351 65 350 63 349 61 348 59 348 57 346 55 345 52 345 49 344 48 342 47 341 46 340 48 338 49 335 48 333 49 331 50 329 49 327 46 326 47 322 47 320 45 319 44 317 43 315 42 314 41 312 41 309 40 308 40 306 39 304 38 302 37 300 35 298 35 295 35 292 36 291 35 290 36 289 37 290 38 289 40 286 39 283 38 281 37 282 35 281 34 279 33 277 32 276 31 274 32 273 33 271 32 269 32 267 32 265 33 263 33 261 35 261 35 263 35 265 36 267 37 269 39 270 38 269 38 267 38 265 37 263 36 262 37 260 36 259 36 257 37 256 38 257 39 256 38 253 37 254 36 255 36 257 34 258 35 259 34 258 34 260 33 259 32 257 30 256 29 255 28 253 26 253 28 251 28 249 29 248 28 247 28 245 27 243 26 242 25 241 24 240 23 236 22 234 21 232 20 229 21 228 22 227 21 224 21 222 21 220 22 218 24 216 24 214 24 211 24 209 23 208 22 204 22 202 20 201 18 197 19 196 19 193 20 191 21 190 25 185 27 184 28 182 27 181 28 179 29 177 31 173 32 170 32 168 32 166 30 164 31 163 32 161 33 160 32 159 31 157 31 155 31 153 32 149 34 147 34 145 33 143 33 140 34 138 35 137 36 135 37 134 38 133 38 131 40 130 42 127 44 124 46 119 48 114 49 111 51 107 53 103 53 101 54 99 56 95 57 92 58 90 58 88 59 86 60 85 61 81 61 79 62 78 62 76 63 75 64 73 64 69 65 71 66 70 68 71 70 71 71 70 69 70 68 69 66 69 65 67 64 68 64 65 65 63 66 60 65 63 65 66 66 65 66 63 68 63 67 60 70 59 69 58 68 59 67 58 66 57 66 54 67 55 68 54 71 54 70 53 69 52 67 51 67 53 66 52 67 48 67 45 67 43 67 39 68 34 67 33 66 31 66 28 66 26 66 24ZM185 573 186 572 185 571 186 572 185 571 186 570 188 570 189 571 190 572 191 573 192 574 193 575 191 574 192 575 194 576 195 577 194 578 196 579 195 580 193 580 194 579 192 578 191 579 190 578 191 579 192 580 193 581 192 580 193 581 191 581 190 580 189 579 188 578 189 577 189 575 187 575 186 574 187 573 186 572 185 574ZM93 575 94 574 95 573 97 573 97 571 98 572 99 573 99 571 100 572 101 571 100 570 101 571 102 570 101 572 102 571 104 571 103 572 104 573 103 574 104 573 104 575 102 575 101 574 102 575 103 576 101 576 100 577 102 577 100 578 99 577 98 578 98 580 96 580 97 579 98 577 97 578 96 579 95 580 94 578 94 576 93 575ZM305 584 307 582 309 580 310 579 309 576 309 573 311 573 312 574 314 575 315 576 318 576 321 578 324 579 325 580 326 582 326 584 327 585 328 584 329 586 328 587 330 588 332 589 331 591 330 592 329 593 327 594 325 595 322 595 320 596 319 597 318 598 316 599 316 601 315 602 314 603 313 602 311 601 309 600 308 599 309 596 309 593 308 591 307 588 306 587 305 584ZM292 558 293 556 294 555 295 556 296 558 298 558 300 557 302 558 303 559 304 560 306 561 307 562 306 563 305 564 304 565 302 564 300 565 299 566 297 565 297 561 295 561 293 560 292 559ZM258 543 261 543 262 542 263 541 264 540 265 541 266 542 267 544 267 546 269 547 270 546 270 548 271 549 270 550 268 550 266 549 264 549 262 549 261 548 260 547 259 545 258 543ZM226 533 227 531 230 529 232 529 234 528 235 529 237 530 236 532 236 534 235 535 233 536 230 536 229 534 227 534 226 533ZM51 505 53 504 54 503 55 502 57 502 59 501 61 500 63 500 65 500 66 501 65 502 64 503 65 504 67 504 69 504 70 505 72 505 73 503 74 504 73 502 71 502 72 501 71 500 70 499 71 498 72 499 71 500 72 501 73 502 74 501 72 500 72 498 73 497 71 497 69 497 68 496 67 495 66 492 65 491 64 489 63 488 62 487 61 486 60 485 59 484 61 484 61 482 62 481 64 481 66 481 68 481 69 480 70 479 71 478 71 476 72 475 73 474 74 472 75 471 76 472 78 472 79 471 80 470 82 468 83 469 85 469 86 468 88 467 89 465 91 465 92 466 93 467 92 468 93 467 94 468 93 467 94 466 95 467 95 469 97 469 98 468 100 468 101 469 101 471 103 471 102 472 104 472 105 471 106 472 107 471 109 471 111 471 112 472 114 472 115 473 117 473 119 473 121 473 122 474 123 473 124 472 126 472 128 472 129 473 130 474 132 474 145 535 146 541 147 547 149 547 151 547 152 546 155 545 155 547 156 548 157 549 162 552 163 554 164 555 165 552 167 552 166 549 167 550 166 548 168 547 169 546 171 546 172 547 172 549 174 549 175 550 176 551 178 552 179 553 181 554 182 556 183 557 184 558 185 559 186 560 187 561 188 562 190 562 190 564 191 565 192 566 193 565 195 566 197 566 199 567 201 567 201 569 201 571 203 572 203 574 202 576 202 578 201 577 200 578 200 576 199 575 199 573 198 572 197 570 196 569 197 570 198 571 198 573 199 574 198 573 198 575 197 574 196 575 195 574 195 572 194 571 194 573 193 574 192 573 193 572 192 571 192 569 192 571 191 572 190 571 189 570 190 568 189 567 188 566 187 565 186 564 185 563 184 564 183 563 184 562 182 561 181 560 183 560 182 559 181 558 179 557 178 556 179 555 178 556 177 557 175 556 174 554 173 553 174 554 173 553 172 552 172 550 170 550 172 551 171 550 171 552 172 553 173 554 174 556 175 558 173 557 171 557 170 556 169 554 167 553 166 554 168 555 169 556 170 557 169 558 168 559 167 558 165 558 163 557 162 556 161 555 160 554 158 554 156 553 153 552 154 551 153 549 154 548 153 549 151 551 149 551 146 551 147 550 146 549 145 550 143 550 141 550 139 550 138 551 137 552 136 551 135 552 134 553 135 551 134 550 132 550 132 548 131 550 130 549 128 549 129 548 127 549 128 550 126 550 125 551 126 550 125 549 127 549 128 548 127 547 125 547 126 546 124 547 125 546 124 545 125 544 124 545 123 546 124 545 123 544 123 546 122 545 121 546 120 547 119 546 120 545 121 543 120 545 119 546 118 547 119 548 119 550 120 549 120 551 119 552 121 552 121 554 119 554 119 552 119 554 117 554 116 553 115 555 115 553 115 555 114 554 114 556 114 554 114 556 112 556 113 557 112 558 111 559 111 557 110 558 109 559 108 560 107 561 105 561 105 559 106 558 108 557 109 556 107 557 105 557 105 555 106 554 107 553 107 551 107 549 108 548 109 547 111 546 112 547 113 546 115 547 114 546 113 545 112 544 113 543 114 542 113 543 112 544 110 544 108 545 107 546 106 547 105 548 106 549 105 548 104 549 103 550 104 551 103 552 102 553 102 555 100 556 99 557 98 558 97 559 96 560 96 562 98 562 99 563 100 564 99 565 98 566 97 567 96 568 95 569 94 570 92 571 91 572 90 573 89 574 88 575 87 574 86 575 87 576 86 577 85 578 84 579 83 580 82 579 81 580 82 581 80 580 79 581 80 582 78 582 77 583 78 584 77 585 76 586 74 586 73 587 72 586 72 588 71 589 71 587 69 588 68 589 67 588 66 589 64 590 63 589 64 588 63 587 62 588 61 590 60 591 59 592 58 591 58 589 57 590 58 591 57 592 56 591 55 593 54 594 52 594 50 594 49 595 47 595 46 594 47 593 48 592 49 591 51 591 53 591 54 592 55 591 56 590 57 589 58 588 60 587 61 586 62 585 64 585 66 585 66 587 67 586 68 587 69 586 68 585 69 583 70 582 71 581 73 580 75 579 77 579 76 578 77 577 78 576 79 575 80 574 81 573 82 569 83 568 82 567 83 566 84 564 85 563 84 562 83 564 81 564 80 565 79 564 78 563 77 564 77 566 76 567 75 565 74 563 73 562 72 563 71 562 70 561 69 562 67 563 66 564 64 563 65 562 65 560 64 559 65 557 66 556 65 555 65 553 64 552 63 551 62 552 61 553 58 553 56 552 57 551 56 550 55 549 54 548 53 547 52 546 54 545 55 544 54 543 55 542 54 541 53 542 53 540 52 539 51 538 53 537 52 536 53 535 54 534 55 532 56 531 57 530 58 528 59 527 60 526 62 526 63 527 64 528 65 527 67 526 67 524 68 525 70 525 72 525 73 523 73 521 73 519 72 518 71 517 73 517 74 516 73 515 72 514 71 515 69 515 68 517 67 518 66 517 66 515 65 516 66 517 65 516 63 516 62 515 60 516 58 515 56 515 55 514 55 512 54 511 54 509 55 510 56 509 55 508 54 507 52 507 51 506Z"/><g class="pin"><circle class="halo" cx="911" cy="129" r="17"/><circle class="dot" cx="911" cy="129" r="7.5"/></g><g class="pin"><circle class="halo" cx="800" cy="413" r="17"/><circle class="dot" cx="800" cy="413" r="7.5"/></g></svg>
+  </div>
+  <div class="officecol">
+    <div class="office">
+      <span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+      <div><b>New Gloucester, Maine</b>
+        <span>49 Pineland Drive<br>New Gloucester, ME</span></div>
+    </div>
+    <div class="office">
+      <span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+      <div><b>North Charleston, South Carolina</b>
+        <span>1535 Hobby Street<br>North Charleston, SC</span></div>
+    </div>
+    <div class="office call">
+      <span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+      <div><b>Rather just talk?</b>
+        <a class="tel" href="tel:12073870396">1-207-387-0396</a>
+        <span>Monday to Friday, 8am–6pm ET. A consultant picks up, not a queue.</span></div>
+    </div>
+  </div>
+  </div>
+</div></section>
+
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">Meet a senior consultant — free, 30 minutes</h2>
-      <p>The person you talk to is the person who does the work. Test that claim.</p></div>
-    <a class="btn" href="#/contact">Book a free assessment</a>
+      <p>Write to us. The person who replies is the person who does the work — test that claim.</p></div>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
@@ -2059,7 +2312,7 @@
 <header class="pagehero"><div class="wrap">
   <span class="eyebrow">Insights</span>
   <h1 class="serif">Written by the people who do the work.</h1>
-  <p class="dek">Field notes on Dynamics, data, and AI at SMB scale — no ghostwriters, no filler.</p>
+  <p class="dek">Field notes on Dynamics, data, and AI at SMB scale</p>
 </div></header>
 
 <section class="alt"><div class="wrap">
@@ -2088,11 +2341,11 @@
   <p class="footnote" style="margin-top:20px">Article stubs — replace with real posts at launch.</p>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="ctasec"><div class="wrap">
   <div class="ctaband">
     <div><h2 class="serif">Prefer answers to articles?</h2>
-      <p>Bring the question to a free 30-minute assessment.</p></div>
-    <a class="btn" href="#/contact">Book a free assessment</a>
+      <p>Write to us and bring it to a free 30-minute assessment.</p></div>
+    <a class="btn" href="#/contact">Request an assessment</a>
   </div>
 </div></section>
 </main>
@@ -2100,22 +2353,19 @@
 <!-- ============================== CONTACT ============================== -->
 <main data-page="contact" hidden>
 <header class="pagehero"><div class="wrap">
-  <span class="eyebrow">Book your assessment</span>
-  <h1 class="serif">Book a free 30-minute AI &amp; Systems Assessment.</h1>
+  <span class="eyebrow">Request your assessment</span>
+  <h1 class="serif">Request a free 30-minute AI &amp; Systems Assessment.</h1>
   <p class="dek">A senior consultant, not a salesperson. We map your systems, name the first win,
     and you leave with two or three concrete moves — whether or not you hire us.</p>
 </div></header>
 
 <section><div class="wrap assessgrid">
   <div>
-    <h2 class="serif" style="font-size:24px">Pick a time that suits you.</h2>
-    <p class="lede" style="margin-bottom:10px">Live calendar at launch (Microsoft Bookings). Sample
-      slots:</p>
-    <div class="slots" role="group" aria-label="Sample time slots">
-      <button class="slot">Tue 10:00</button><button class="slot">Tue 14:30</button><button class="slot">Wed 09:00</button>
-      <button class="slot on" aria-pressed="true">Wed 15:00</button><button class="slot">Thu 11:00</button><button class="slot">Fri 10:30</button>
-    </div>
-    <p class="slotnote">All times ET · 30 minutes · Teams or phone, your choice.</p>
+    <h2 class="serif" style="font-size:24px">No calendar to fight with.</h2>
+    <p class="lede" style="margin-bottom:10px">Write to us instead. Tell us a couple of windows that
+      work for you and we'll confirm one by reply — usually the same business day.</p>
+    <p class="slotnote">30 minutes · Teams or phone, your choice · <a href="tel:12073870396">1-207-387-0396</a>
+      if you'd rather just call.</p>
     <h3 class="serif" style="margin-top:34px">What happens in the 30 minutes</h3>
     <p style="font-size:14.5px;color:var(--ink-2)">10 min: your systems and pain points · 15 min: what
       we've done for companies like yours — including live AI examples · 5 min: two or three concrete
@@ -2183,11 +2433,11 @@
     <div class="chh"><div>DeerBrook assistant<small>Ask anything — a human replies within 24 hrs if I can't help.</small></div><button class="chx" id="chatclose" aria-label="Close chat">✕</button></div>
     <div class="chb">
       <p class="greet">Hi — I can answer questions about our stack, timelines, and what things cost,
-        or hand you straight to a booking.</p>
+        or hand you straight to the form.</p>
       <div class="chips">
         <button class="chip">Moving off GP?</button>
         <button class="chip">What does BC cost?</button>
-        <button class="chip">Book an assessment</button>
+        <button class="chip">Request an assessment</button>
       </div>
       <div class="chatin"><input aria-label="Type your question" placeholder="Type your question…"><button class="btn">Send</button></div>
     </div>
@@ -2218,7 +2468,7 @@
       cases:'Case Studies · DeerBrook Future',
       about:'About · DeerBrook Future',
       insights:'Insights · DeerBrook Future',
-      contact:'Book an assessment · DeerBrook Future'};
+      contact:'Request an assessment · DeerBrook Future'};
     function go(){
       var h = (location.hash||'').replace(/^#\/?/, '') || 'home';
       if(!titles[h]) h = 'home';
@@ -2289,10 +2539,10 @@
       }, {threshold:.1, rootMargin:'0px 0px -36px 0px'});
       var main = document.querySelector('main:not([hidden])');
       if(!main) return;
-      main.querySelectorAll('.pillars,.ladder,.steps,.painlist,.split,.posts,.people,.b4after,.signs').forEach(function(g){
+      main.querySelectorAll('.pillars,.ladder,.steps,.painlist,.split,.posts,.people,.b4after,.signs,.behavs,.stack,.clauses,.officecol').forEach(function(g){
         Array.prototype.forEach.call(g.children, function(c, i){ c.style.transitionDelay = Math.min(i*70, 420) + 'ms'; });
       });
-      var sel = 'h2,.lede,.pillar,.lad,.step,.bank,.door,.pain,.quote,.ctaband,.askai,.b4,.post,.person,.case,.sign,.tablewrap,.engage,.urgent,details.faq';
+      var sel = 'h2,.lede,.pillar,.lad,.step,.bank,.door,.pain,.quote,.ctaband,.askai,.b4,.post,.person,.case,.sign,.tablewrap,.engage,.urgent,details.faq,.behav,.slayer,.clause,.office';
       main.querySelectorAll(sel).forEach(function(el){
         el.classList.add('rv');
         io.observe(el);
@@ -2354,13 +2604,6 @@
       }, {threshold:.6});
       document.querySelectorAll('[data-cnt]').forEach(function(el){ cio.observe(el); });
     }
-
-    // sample slot picker
-    document.addEventListener('click', function(e){
-      var s = e.target.closest('.slot'); if(!s) return;
-      s.closest('.slots').querySelectorAll('.slot').forEach(function(b){b.classList.remove('on');b.removeAttribute('aria-pressed');});
-      s.classList.add('on'); s.setAttribute('aria-pressed','true');
-    });
 
     // chat widget
     var fab = document.getElementById('chatfab'), panel = document.getElementById('chatpanel');
